@@ -1544,10 +1544,10 @@
     },
     {
         "name": "Bonded Animal",
-        "desc": "You forge strong connections with animals. You can spend 7 days of downtime trying to bond with a normal animal (not a companion or other special animal). After this duration, attempt a DC 20 Nature check. If successful, you bond with the animal. The animal is permanently helpful to you, unless you do something egregious to break your bond. A helpful animal is easier to direct, as described under Command an Animal.\n\nBonding with a new animal ends any previous bond you had. You can't have both a bonded animal and an animal companion (though you can have both a bonded animal and a familiar).",
+        "desc": "You forge strong connections with animals. You can spend 7 days of downtime regularly interacting with a normal animal (not a companion or other special animal) that is friendly or helpful to you. After this duration, attempt a DC 20 Nature check. If successful, you bond with the animal. The animal is permanently helpful to you, unless you do something egregious to break your bond. A helpful animal is easier to direct, as described under Command an Animal.\n\nBonding with a new animal ends any previous bond you had. You can't have both a bonded animal and an animal companion (though you can have both a bonded animal and a familiar).",
         "hints": [
             {
-                "desc": "You can spend 7 days of downtime trying to bond with a normal animal (not a companion or other special animal). After this duration, attempt a DC 20 Nature check. If successful, you bond with the animal. The animal is permanently helpful to you, unless you do something egregious to break your bond. A helpful animal is easier to direct, as described under Command an Animal.\n\nBonding with a new animal ends any previous bond you had. You can't have both a bonded animal and an animal companion (though you can have both a bonded animal and a familiar).",
+                "desc": "You can spend 7 days of downtime regularly interacting with a normal animal (not a companion or other special animal) that is friendly or helpful to you. After this duration, attempt a DC 20 Nature check. If successful, you bond with the animal. The animal is permanently helpful to you, unless you do something egregious to break your bond. A helpful animal is easier to direct, as described under Command an Animal.\n\nBonding with a new animal ends any previous bond you had. You can't have both a bonded animal and an animal companion (though you can have both a bonded animal and a familiar).",
                 "showon": "Nature"
             }
         ],
@@ -1914,7 +1914,8 @@
         "shortdesc": "Leverage your connections for favors and meetings.",
         "traits": [
             "General",
-            "Skill"
+            "Skill",
+            "Uncommon"
         ],
         "levelreq": 2,
         "featreq": [
@@ -2245,10 +2246,10 @@
     },
     {
         "name": "Dubious Knowledge",
-        "desc": "You're a treasure trove of information, but not all of it comes from reputable sources. When you fail a Recall Knowledge check using any skill, you learn a bit of true knowledge and a bit of erroneous knowledge, but you don't have any way to differentiate which is which.",
+        "desc": "You're a treasure trove of information, but not all of it comes from reputable sources. When you roll a failure on a Recall Knowledge check using any skill, you learn a bit of true knowledge and a bit of erroneous knowledge, but you don't have any way to differentiate which is which.",
         "hints": [
             {
-                "desc": "When you fail a Recall Knowledge check using any skill, you learn a bit of true knowledge and a bit of erroneous knowledge, but you don't have any way to differentiate which is which.",
+                "desc": "When you roll a failure on a Recall Knowledge check using any skill, you learn a bit of true knowledge and a bit of erroneous knowledge, but you don't have any way to differentiate which is which.",
                 "showon": "Arcana, Crafting, Lore, Medicine, Nature, Occultism, Religion, Society"
             }
         ],
@@ -6698,10 +6699,10 @@
     },
     {
         "name": "Toughness",
-        "desc": "You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value.",
+        "desc": "You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value (page 459).",
         "hints": [
             {
-                "desc": "The DC of recovery checks is equal to 9 + your dying condition value.",
+                "desc": "The DC of recovery checks is equal to 9 + your dying condition value (page 459).",
                 "showon": "Max Dying"
             }
         ],
@@ -6862,10 +6863,10 @@
     },
     {
         "name": "Unified Theory",
-        "desc": "You've started to make a meaningful connection about the common underpinnings of the four traditions of magic and magical essences, allowing you to understand them all through an arcane lens. Whenever you use an action or a skill feat that requires a Nature, Occultism, or Religion check, depending on the magic tradition, you can use Arcana instead. If you would normally take a penalty or have a higher DC for using Arcana on other magic (such as when using Identify Magic), you no longer do so.",
+        "desc": "You've started to make a meaningful connection about the common underpinnings of the four traditions of magic and magical essences, allowing you to understand them all through an arcane lens. Whenever you use a skill action or a skill feat that requires a Nature, Occultism, or Religion check, depending on the magic tradition, you can use Arcana instead. If you would normally take a penalty or have a higher DC for using Arcana on other magic (such as when using Identify Magic), you no longer do so.",
         "hints": [
             {
-                "desc": "Whenever you use an action or a skill feat that requires a Nature, Occultism, or Religion check, depending on the magic tradition, you can use Arcana instead. If you would normally take a penalty or have a higher DC for using Arcana on other magic (such as when using Identify Magic), you no longer do so.",
+                "desc": "Whenever you use a skill action or a skill feat that requires a Nature, Occultism, or Religion check, depending on the magic tradition, you can use Arcana instead. If you would normally take a penalty or have a higher DC for using Arcana on other magic (such as when using Identify Magic), you no longer do so.",
                 "showon": "Arcana"
             }
         ],
@@ -13234,6 +13235,302 @@
             }
         ]
     },
+    {
+        "name": "Path to Perfection",
+        "desc": "You have progressed along your own path to enlightenment. Choose your Fortitude, Reflex, or Will saving throw. Your proficiency rank for the chosen saving throw increases to master. When you roll a success on the chosen saving throw, you get a critical success instead.",
+        "subTypes": true,
+        "shortdesc": "You have progressed along your own path to enlightenment."
+    },
+    {
+        "name": "Path to Perfection: Fortitude",
+        "desc": "You have progressed along your own path to enlightenment. Your proficiency rank for Fortitude saving throws increases to master. When you roll a success on a Fortitude save, you get a critical success instead.",
+        "hints": [
+            {
+                "desc": "When you roll a success on a Fortitude save, you get a critical success instead.",
+                "showon": "Fortitude"
+            }
+        ],
+        "subType": "Fortitude",
+        "superType": "Path to Perfection",
+        "shortdesc": "You have progressed along your own path to enlightenment.",
+        "gainSkillChoice": [
+            {
+                "_className": "SkillChoice",
+                "increases": [
+                    {
+                        "locked": true,
+                        "maxRank": 6,
+                        "name": "Fortitude",
+                        "source": "Path to Perfection: Fortitude"
+                    }
+                ],
+                "maxRank": 6,
+                "source": "Path to Perfection: Fortitude",
+                "type": "Save"
+            }
+        ]
+    },
+    {
+        "name": "Path to Perfection: Reflex",
+        "desc": "You have progressed along your own path to enlightenment. Your proficiency rank for Reflex saving throws increases to master. When you roll a success on a Reflex save, you get a critical success instead.",
+        "hints": [
+            {
+                "desc": "When you roll a success on a Reflex save, you get a critical success instead.",
+                "showon": "Reflex"
+            }
+        ],
+        "subType": "Reflex",
+        "superType": "Path to Perfection",
+        "shortdesc": "You have progressed along your own path to enlightenment.",
+        "gainSkillChoice": [
+            {
+                "_className": "SkillChoice",
+                "increases": [
+                    {
+                        "locked": true,
+                        "maxRank": 6,
+                        "name": "Reflex",
+                        "source": "Path to Perfection: Reflex"
+                    }
+                ],
+                "maxRank": 6,
+                "source": "Path to Perfection: Reflex",
+                "type": "Save"
+            }
+        ]
+    },
+    {
+        "name": "Path to Perfection: Will",
+        "desc": "You have progressed along your own path to enlightenment. Your proficiency rank for Will saving throws increases to master. When you roll a success on a Will save, you get a critical success instead.",
+        "hints": [
+            {
+                "desc": "When you roll a success on a Will save, you get a critical success instead.",
+                "showon": "Will"
+            }
+        ],
+        "subType": "Will",
+        "superType": "Path to Perfection",
+        "shortdesc": "You have progressed along your own path to enlightenment.",
+        "gainSkillChoice": [
+            {
+                "_className": "SkillChoice",
+                "increases": [
+                    {
+                        "locked": true,
+                        "maxRank": 6,
+                        "name": "Will",
+                        "source": "Path to Perfection: Will"
+                    }
+                ],
+                "maxRank": 6,
+                "source": "Path to Perfection: Will",
+                "type": "Save"
+            }
+        ]
+    },
+    {
+        "name": "Second Path to Perfection",
+        "desc": "You've learned to find perfection in every success. Choose a different saving throw than the one you chose for your path to perfection. Your proficiency rank for the chosen saving throw increases to master. If you roll a success with the chosen saving throw, you instead critically succeed.",
+        "subTypes": true,
+        "shortdesc": "You've learned to find perfection in every success."
+    },
+    {
+        "name": "Second Path to Perfection: Fortitude",
+        "desc": "You've learned to find perfection in every success. Your proficiency rank for Fortitude saving throws increases to master. If you roll a success on a Fortitude Save, you get a critical success instead.",
+        "hints": [
+            {
+                "desc": "When you roll a success on a Fortitude save, you get a critical success instead.",
+                "showon": "Fortitude"
+            }
+        ],
+        "subType": "Fortitude",
+        "superType": "Second Path to Perfection",
+        "shortdesc": "You've learned to find perfection in every success.",
+        "specialreq": "!Has_Feat('Character', 'Path to Perfection: Fortitude')",
+        "specialreqdesc": "not Path to Perfection: Fortitude",
+        "gainSkillChoice": [
+            {
+                "_className": "SkillChoice",
+                "increases": [
+                    {
+                        "locked": true,
+                        "maxRank": 6,
+                        "name": "Fortitude",
+                        "source": "Second Path to Perfection: Fortitude"
+                    }
+                ],
+                "maxRank": 6,
+                "source": "Second Path to Perfection: Fortitude",
+                "type": "Save"
+            }
+        ]
+    },
+    {
+        "name": "Second Path to Perfection: Reflex",
+        "desc": "You've learned to find perfection in every success. Your proficiency rank for Reflex saving throws increases to master. If you roll a success on a Reflex Save, you get a critical success instead.",
+        "hints": [
+            {
+                "desc": "When you roll a success on a Reflex save, you get a critical success instead.",
+                "showon": "Reflex"
+            }
+        ],
+        "subType": "Reflex",
+        "superType": "Second Path to Perfection",
+        "shortdesc": "You've learned to find perfection in every success.",
+        "specialreq": "!Has_Feat('Character', 'Path to Perfection: Reflex')",
+        "specialreqdesc": "not Path to Perfection: Reflex",
+        "gainSkillChoice": [
+            {
+                "_className": "SkillChoice",
+                "increases": [
+                    {
+                        "locked": true,
+                        "maxRank": 6,
+                        "name": "Reflex",
+                        "source": "Second Path to Perfection: Reflex"
+                    }
+                ],
+                "maxRank": 6,
+                "source": "Second Path to Perfection: Reflex",
+                "type": "Save"
+            }
+        ]
+    },
+    {
+        "name": "Second Path to Perfection: Will",
+        "desc": "You've learned to find perfection in every success. Your proficiency rank for Will saving throws increases to master. If you roll a success on a Will Save, you get a critical success instead.",
+        "hints": [
+            {
+                "desc": "When you roll a success on a Will save, you get a critical success instead.",
+                "showon": "Will"
+            }
+        ],
+        "subType": "Will",
+        "superType": "Second Path to Perfection",
+        "shortdesc": "You've learned to find perfection in every success.",
+        "specialreq": "!Has_Feat('Character', 'Path to Perfection: Will')",
+        "specialreqdesc": "not Path to Perfection: Will",
+        "gainSkillChoice": [
+            {
+                "_className": "SkillChoice",
+                "increases": [
+                    {
+                        "locked": true,
+                        "maxRank": 6,
+                        "name": "Will",
+                        "source": "Second Path to Perfection: Will"
+                    }
+                ],
+                "maxRank": 6,
+                "source": "Second Path to Perfection: Will",
+                "type": "Save"
+            }
+        ]
+    },
+    {
+        "name": "Third Path to Perfection",
+        "desc": "You have made great progress in your personal studies of enlightenment. Choose one of the saving throws you selected for path to perfection or second path to perfection. Your proficiency rank for the chosen type of save increases to legendary. When you roll a critical failure on the chosen type of save, you get a failure instead. When you roll a failure on the chosen type of save against an effect that deals damage, you take half damage.",
+        "subTypes": true,
+        "shortdesc": "You have made great progress in your personal studies of enlightenment."
+    },
+    {
+        "name": "Third Path to Perfection: Fortitude",
+        "desc": "You have made great progress in your personal studies of enlightenment. Your proficiency rank for Fortitude saving throws increases to legendary. When you roll a critical failure on a Fortitude save, you get a failure instead. When you roll a failure on a Fortitude save against an effect that deals damage, you take half damage.",
+        "hints": [
+            {
+                "desc": "When you roll a critical failure on a Fortitude save, you get a failure instead. When you roll a failure on a Fortitude save against an effect that deals damage, you take half damage.",
+                "showon": "Fortitude"
+            }
+        ],
+        "subType": "Fortitude",
+        "superType": "Third Path to Perfection",
+        "shortdesc": "You have made great progress in your personal studies of enlightenment.",
+        "featreq": [
+            "Path to Perfection: Fortitude or Second Path to Perfection: Fortitude"
+        ],
+        "gainSkillChoice": [
+            {
+                "_className": "SkillChoice",
+                "increases": [
+                    {
+                        "locked": true,
+                        "maxRank": 8,
+                        "name": "Fortitude",
+                        "source": "Third Path to Perfection: Fortitude"
+                    }
+                ],
+                "maxRank": 8,
+                "source": "Third Path to Perfection: Fortitude",
+                "type": "Save"
+            }
+        ]
+    },
+    {
+        "name": "Third Path to Perfection: Reflex",
+        "desc": "You have made great progress in your personal studies of enlightenment. Your proficiency rank for Reflex saving throws increases to legendary. When you roll a critical failure on a Reflex save, you get a failure instead. When you roll a failure on a Reflex save against an effect that deals damage, you take half damage.",
+        "hints": [
+            {
+                "desc": "When you roll a critical failure on a Reflex save, you get a failure instead. When you roll a failure on a Reflex save against an effect that deals damage, you take half damage.",
+                "showon": "Reflex"
+            }
+        ],
+        "subType": "Reflex",
+        "superType": "Third Path to Perfection",
+        "shortdesc": "You have made great progress in your personal studies of enlightenment.",
+        "featreq": [
+            "Path to Perfection: Reflex or Second Path to Perfection: Reflex"
+        ],
+        "gainSkillChoice": [
+            {
+                "_className": "SkillChoice",
+                "increases": [
+                    {
+                        "locked": true,
+                        "maxRank": 8,
+                        "name": "Reflex",
+                        "source": "Third Path to Perfection: Reflex"
+                    }
+                ],
+                "maxRank": 8,
+                "source": "Third Path to Perfection: Reflex",
+                "type": "Save"
+            }
+        ]
+    },
+    {
+        "name": "Third Path to Perfection: Will",
+        "desc": "You have made great progress in your personal studies of enlightenment. Your proficiency rank for Will saving throws increases to legendary. When you roll a critical failure on a Will save, you get a failure instead. When you roll a failure on a Will save against an effect that deals damage, you take half damage.",
+        "hints": [
+            {
+                "desc": "When you roll a critical failure on a Will save, you get a failure instead. When you roll a failure on a Will save against an effect that deals damage, you take half damage.",
+                "showon": "Will"
+            }
+        ],
+        "subType": "Will",
+        "superType": "Third Path to Perfection",
+        "shortdesc": "You have made great progress in your personal studies of enlightenment.",
+        "featreq": [
+            "Path to Perfection: Will or Second Path to Perfection: Will"
+        ],
+        "gainSkillChoice": [
+            {
+                "_className": "SkillChoice",
+                "increases": [
+                    {
+                        "locked": true,
+                        "maxRank": 8,
+                        "name": "Will",
+                        "source": "Third Path to Perfection: Will"
+                    }
+                ],
+                "maxRank": 8,
+                "source": "Third Path to Perfection: Will",
+                "type": "Save"
+            }
+        ]
+    }
+    
+    ,
     {
         "name": "Aberrant Bloodline",
         "desc": "Something speaks to you from beyond the stars or below the earth. Ancient and unknowable, this alien influence presses against your mind.\n\n<strong>Spell List</strong> occult\n<strong>Bloodline Skills</strong> Intimidation, Occultism\n<strong>Granted Spells</strong> cantrip: daze, 1st: spider sting, 2nd: touch of idiocy, 3rd: vampiric touch, 4th: confusion, 5th: black tentacles, 6th: feeblemind, 7th: warp mind, 8th: uncontrollable dance, 9th: unfathomable song\n<strong>Bloodline Spells</strong> initial: tentacular limbs, advanced: aberrant whispers, greater: unusual anatomy\n<strong>Blood Magic</strong> Aberrant whispers shield one target's mind or your own, granting a +2 status bonus to Will saving throws for 1 round.",
@@ -23566,10 +23863,9 @@
         ],
         "levelreq": 14,
         "featreq": [
+            "Animal Companion",
             "Camouflage"
         ],
-        "specialreq": "characterService.get_CompanionAvailable()",
-        "specialreqdesc": "an animal companion",
         "effects": [
             {
                 "affected": "Companion:Stealth Proficiency Level",
@@ -28685,10 +28981,10 @@
     },
     {
         "name": "Blank Slate",
-        "desc": "Your deceptions confound even the most powerful mortal divinations. Detection, revelation, and scrying effects pass right over you, your possessions, and your auras, detecting nothing unless the detecting effect has a counteract level of 20 or higher. For example, detect magic would still detect other magic in the area but not any magic on you, true seeing wouldn't reveal you, locate or scrying wouldn't find you, and so on.",
+        "desc": "Your deceptions confound even the most powerful mortal divinations. Detection, revelation, and scrying effects pass right over you, your possessions, and your auras, detecting nothing unless the detecting effect has a counteract level of 10 or higher. For example, detect magic would still detect other magic in the area but not any magic on you, true seeing wouldn't reveal you, locate or scrying wouldn't find you, and so on.",
         "hints": [
             {
-                "desc": "Detection, revelation, and scrying effects pass right over you, your possessions, and your auras, detecting nothing unless the detecting effect has a counteract level of 20 or higher. For example, detect magic would still detect other magic in the area but not any magic on you, true seeing wouldn't reveal you, locate or scrying wouldn't find you, and so on.",
+                "desc": "Detection, revelation, and scrying effects pass right over you, your possessions, and your auras, detecting nothing unless the detecting effect has a counteract level of 10 or higher. For example, detect magic would still detect other magic in the area but not any magic on you, true seeing wouldn't reveal you, locate or scrying wouldn't find you, and so on.",
                 "showon": "Deception"
             }
         ],

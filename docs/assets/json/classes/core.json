@@ -6779,11 +6779,6 @@
                 "ability": "Wisdom",
                 "name": "Druid Primal Spell DC",
                 "type": "Spell DC"
-            },
-            {
-                "ability": "Wisdom",
-                "name": "Druid Class DC",
-                "type": "Class DC"
             }
         ],
         "desc": [
@@ -6818,10 +6813,6 @@
             {
                 "name": "Defenses",
                 "value": "Trained in light armor\nTrained in medium armor\nTrained in unarmored defense"
-            },
-            {
-                "name": "Class DC",
-                "value": "Trained in druid class DC"
             },
             {
                 "name": "Spells",
@@ -7013,13 +7004,6 @@
                                 "locked": true,
                                 "maxRank": 2,
                                 "name": "Unarmored Defense",
-                                "source": "Class",
-                                "sourceId": "1-Any-Class-0"
-                            },
-                            {
-                                "locked": true,
-                                "maxRank": 2,
-                                "name": "Druid Class DC",
                                 "source": "Class",
                                 "sourceId": "1-Any-Class-0"
                             },
@@ -9997,12 +9981,6 @@
                         "feats": [
                             {
                                 "locked": true,
-                                "name": "Path to Perfection",
-                                "source": "Monk",
-                                "sourceId": "7-Feature-Monk-0"
-                            },
-                            {
-                                "locked": true,
                                 "name": "Weapon Specialization",
                                 "source": "Monk",
                                 "sourceId": "7-Feature-Monk-0"
@@ -10018,18 +9996,21 @@
                         "id": "7-General-Class-1",
                         "source": "Class",
                         "type": "General"
+                    },
+                    {
+                        "_className": "FeatChoice",
+                        "available": 1,
+                        "filter": [
+                            "Path to Perfection"
+                        ],
+                        "id": "7-Path to Perfection-Monk-2",
+                        "source": "Monk",
+                        "specialChoice": true,
+                        "type": "Path to Perfection"
                     }
                 ],
                 "number": 7,
                 "skillChoices": [
-                    {
-                        "_className": "SkillChoice",
-                        "available": 1,
-                        "id": "7-Save-Path to Perfection-0",
-                        "maxRank": 6,
-                        "source": "Path to Perfection",
-                        "type": "Save"
-                    },
                     {
                         "_className": "SkillChoice",
                         "available": 1,
@@ -10184,17 +10165,14 @@
                 "featChoices": [
                     {
                         "_className": "FeatChoice",
-                        "feats": [
-                            {
-                                "locked": true,
-                                "name": "Second Path to Perfection",
-                                "source": "Monk",
-                                "sourceId": "11-Feature-Monk-0"
-                            }
+                        "available": 1,
+                        "filter": [
+                            "Second Path to Perfection"
                         ],
-                        "id": "11-Feature-Monk-0",
+                        "id": "11-Second Path to Perfection-Monk-0",
                         "source": "Monk",
-                        "type": "Feature"
+                        "specialChoice": true,
+                        "type": "Second Path to Perfection"
                     },
                     {
                         "_className": "FeatChoice",
@@ -10206,14 +10184,6 @@
                 ],
                 "number": 11,
                 "skillChoices": [
-                    {
-                        "_className": "SkillChoice",
-                        "available": 1,
-                        "id": "11-Save-Second Path to Perfection-0",
-                        "maxRank": 6,
-                        "source": "Second Path to Perfection",
-                        "type": "Save"
-                    },
                     {
                         "_className": "SkillChoice",
                         "available": 1,
@@ -10397,12 +10367,6 @@
                                 "name": "Greater Weapon Specialization",
                                 "source": "Monk",
                                 "sourceId": "15-Feature-Monk-0"
-                            },
-                            {
-                                "locked": true,
-                                "name": "Third Path to Perfection",
-                                "source": "Monk",
-                                "sourceId": "15-Feature-Monk-0"
                             }
                         ],
                         "id": "15-Feature-Monk-0",
@@ -10415,21 +10379,21 @@
                         "id": "15-General-Class-1",
                         "source": "Class",
                         "type": "General"
+                    },
+                    {
+                        "_className": "FeatChoice",
+                        "available": 1,
+                        "filter": [
+                            "Third Path to Perfection"
+                        ],
+                        "id": "15-Third Path to Perfection-Monk-2",
+                        "source": "Monk",
+                        "specialChoice": true,
+                        "type": "Third Path to Perfection"
                     }
                 ],
                 "number": 15,
                 "skillChoices": [
-                    {
-                        "_className": "SkillChoice",
-                        "available": 1,
-                        "filter": [
-                            "none"
-                        ],
-                        "id": "15-Save-Third Path to Perfection-0",
-                        "maxRank": 8,
-                        "source": "Third Path to Perfection",
-                        "type": "Save"
-                    },
                     {
                         "_className": "SkillChoice",
                         "available": 1,
