@@ -11,10 +11,11 @@
             "Light",
             "Magical"
         ],
+        "_className": "HeldItem",
         "usage": "held in 1 hand"
     },
     {
-        "desc": "Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a bag of holding opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn’t change the Bulk of the bag of holding itself. The amount of Bulk the bag’s extradimensional space can hold depends on its type.\n\nYou can Interact with the bag of holding to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.\n\nIf the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it’s turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it’s retrieved first. An item in the bag can’t be detected by magic that detects only things on the same plane.",
+        "desc": "Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a bag of holding opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn't change the Bulk of the bag of holding itself. The amount of Bulk the bag's extradimensional space can hold depends on its type.\n\nYou can Interact with the bag of holding to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.\n\nIf the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it's retrieved first. An item in the bag can't be detected by magic that detects only things on the same plane.",
         "id": "7a2c6faf-bdf4-4901-b178-df2cd772543c",
         "bulk": "1",
         "level": 4,
@@ -34,7 +35,7 @@
                 "bulkReduction": 25
             }
         ],
-        "_className": "WornItem",
+        "_className": "HeldItem",
         "usage": "held in 2 hands"
     },
     {
@@ -42,10 +43,10 @@
         "id": "d5d9bc3e-4e79-4cfa-bc72-34baf871debe",
         "level": 5,
         "price": 16000,
-        "desc": "This strand of ordinary-looking prayer beads glows with a soft light and becomes warm to the touch the first time you cast a divine spell while holding it. When you do, the prayer beads become attuned to your deity, changing their form and iconography to prominently incorporate your deity’s religious symbol and iconography. The beads don’t transform or function for an evil spellcaster.\n\nWhenever you cast a divine spell from your own spell slots while holding the prayer beads, you recover 1 Hit Point; this is a positive healing effect. If the spell you cast was a healing spell, you can grant this additional healing to one of the spell’s targets instead of yourself.",
+        "desc": "This strand of ordinary-looking prayer beads glows with a soft light and becomes warm to the touch the first time you cast a divine spell while holding it. When you do, the prayer beads become attuned to your deity, changing their form and iconography to prominently incorporate your deity's religious symbol and iconography. The beads don't transform or function for an evil spellcaster.\n\nWhenever you cast a divine spell from your own spell slots while holding the prayer beads, you recover 1 Hit Point; this is a positive healing effect. If the spell you cast was a healing spell, you can grant this additional healing to one of the spell's targets instead of yourself.",
         "hints": [
             {
-                "desc": "Whenever you cast a divine spell from your own spell slots while holding the prayer beads, you recover 1 Hit Point; this is a positive healing effect. If the spell you cast was a healing spell, you can grant this additional healing to one of the spell’s targets instead of yourself.",
+                "desc": "Whenever you cast a divine spell from your own spell slots while holding the prayer beads, you recover |dice=1| 1 Hit Point; this is a positive healing effect. If the spell you cast was a healing spell, you can grant this additional healing to one of the spell's targets instead of yourself.",
                 "showon": "Spellbook"
             }
         ],
@@ -113,7 +114,7 @@
         "id": "722931a4-9b75-4ed2-b22b-c05a24a4c0fe",
         "level": 6,
         "price": 20000,
-        "desc": "Before it’s activated, this item appears to be an ash rod capped with steel on either end.",
+        "desc": "Before it's activated, this item appears to be an ash rod capped with steel on either end.",
         "traits": [
             "Magical",
             "Transmutation"
@@ -139,7 +140,7 @@
         ]
     },
     {
-        "desc": "Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a bag of holding opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn’t change the Bulk of the bag of holding itself. The amount of Bulk the bag’s extradimensional space can hold depends on its type.\n\nYou can Interact with the bag of holding to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.\n\nIf the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it’s turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it’s retrieved first. An item in the bag can’t be detected by magic that detects only things on the same plane.",
+        "desc": "Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a bag of holding opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn't change the Bulk of the bag of holding itself. The amount of Bulk the bag's extradimensional space can hold depends on its type.\n\nYou can Interact with the bag of holding to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.\n\nIf the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it's retrieved first. An item in the bag can't be detected by magic that detects only things on the same plane.",
         "id": "a181766f-f2b9-430c-8f10-da07dc930181",
         "bulk": "1",
         "level": 7,
@@ -159,11 +160,11 @@
                 "bulkReduction": 50
             }
         ],
-        "_className": "WornItem",
+        "_className": "HeldItem",
         "usage": "held in 2 hands"
     },
     {
-        "desc": "Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a bag of holding opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn’t change the Bulk of the bag of holding itself. The amount of Bulk the bag’s extradimensional space can hold depends on its type.\n\nYou can Interact with the bag of holding to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.\n\nIf the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it’s turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it’s retrieved first. An item in the bag can’t be detected by magic that detects only things on the same plane.",
+        "desc": "Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a bag of holding opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn't change the Bulk of the bag of holding itself. The amount of Bulk the bag's extradimensional space can hold depends on its type.\n\nYou can Interact with the bag of holding to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.\n\nIf the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it's retrieved first. An item in the bag can't be detected by magic that detects only things on the same plane.",
         "id": "ffbfe472-792d-4df9-abec-06d380035f50",
         "bulk": "1",
         "level": 11,
@@ -183,20 +184,20 @@
                 "bulkReduction": 100
             }
         ],
-        "_className": "WornItem",
+        "_className": "HeldItem",
         "usage": "held in 2 hands"
     },
     {
         "name": "Holy Prayer Beads (Greater)",
         "subType": "Greater",
-        "subTypeDesc": "You recover 1d4 Hit Points instead of 1 Hit Point when casting divine spells from your spell slots. Change the beads’ list of spells to the 4th-level versions of bless, divine wrath (matching one component of your deity’s alignment), heal, neutralize poison, and remove disease. You can cast each of these once per day.",
+        "subTypeDesc": "You recover 1d4 Hit Points instead of 1 Hit Point when casting divine spells from your spell slots. Change the beads' list of spells to the 4th-level versions of bless, divine wrath (matching one component of your deity's alignment), heal, neutralize poison, and remove disease. You can cast each of these once per day.",
         "id": "df2ee303-0f2c-4876-a4f5-f15f8f3af5c1",
         "level": 11,
         "price": 140000,
-        "desc": "This strand of ordinary-looking prayer beads glows with a soft light and becomes warm to the touch the first time you cast a divine spell while holding it. When you do, the prayer beads become attuned to your deity, changing their form and iconography to prominently incorporate your deity’s religious symbol and iconography. The beads don’t transform or function for an evil spellcaster.\n\nWhenever you cast a divine spell from your own spell slots while holding the prayer beads, you recover 1 Hit Point; this is a positive healing effect. If the spell you cast was a healing spell, you can grant this additional healing to one of the spell’s targets instead of yourself.",
+        "desc": "This strand of ordinary-looking prayer beads glows with a soft light and becomes warm to the touch the first time you cast a divine spell while holding it. When you do, the prayer beads become attuned to your deity, changing their form and iconography to prominently incorporate your deity's religious symbol and iconography. The beads don't transform or function for an evil spellcaster.\n\nWhenever you cast a divine spell from your own spell slots while holding the prayer beads, you recover 1 Hit Point; this is a positive healing effect. If the spell you cast was a healing spell, you can grant this additional healing to one of the spell's targets instead of yourself.",
         "hints": [
             {
-                "desc": "Whenever you cast a divine spell from your own spell slots while holding the prayer beads, you recover 1d4 Hit Point; this is a positive healing effect. If the spell you cast was a healing spell, you can grant this additional healing to one of the spell’s targets instead of yourself.",
+                "desc": "Whenever you cast a divine spell from your own spell slots while holding the prayer beads, you recover |dice=1d4| 1d4 Hit Point; this is a positive healing effect. If the spell you cast was a healing spell, you can grant this additional healing to one of the spell's targets instead of yourself.",
                 "showon": "Spellbook"
             }
         ],
@@ -330,7 +331,7 @@
         ]
     },
     {
-        "desc": "Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a bag of holding opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn’t change the Bulk of the bag of holding itself. The amount of Bulk the bag’s extradimensional space can hold depends on its type.\n\nYou can Interact with the bag of holding to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.\n\nIf the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it’s turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it’s retrieved first. An item in the bag can’t be detected by magic that detects only things on the same plane.",
+        "desc": "Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a bag of holding opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn't change the Bulk of the bag of holding itself. The amount of Bulk the bag's extradimensional space can hold depends on its type.\n\nYou can Interact with the bag of holding to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.\n\nIf the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it's retrieved first. An item in the bag can't be detected by magic that detects only things on the same plane.",
         "id": "9e39fb5e-8b95-40ca-9597-e4ff678411f7",
         "bulk": "1",
         "level": 13,
@@ -350,7 +351,7 @@
                 "bulkReduction": 150
             }
         ],
-        "_className": "WornItem",
+        "_className": "HeldItem",
         "usage": "held in 2 hands"
     },
     {
@@ -414,7 +415,7 @@
             "Magical",
             "Water"
         ],
-        "usage": "held in 1 hand",
+        "usage": "held in 2 hands",
         "_className": "HeldItem",
         "activities": [
             {
@@ -465,6 +466,105 @@
                     "Conjuration",
                     "Magical",
                     "Water"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Rod of Wonder",
+        "id": "ed7078eb-03aa-4de3-8409-90e82b7b5fb3",
+        "level": 8,
+        "price": 46500,
+        "bulk": "L",
+        "desc": "This peculiar rod is strange and unpredictable. Each time it is activated, it produces one of a variety of effects at random.",
+        "traits": [
+            "Rare",
+            "Chaotic",
+            "Evocation",
+            "Magical"
+        ],
+        "usage": "held in 1 hand",
+        "_className": "HeldItem",
+        "activities": [
+            {
+                "_className": "ItemActivity",
+                "actions": "2A",
+                "activationType": "Command, Interact",
+                "target": "ally",
+                "cannotTargetCaster": true,
+                "gainConditions": [
+                    {
+                        "duration": -5,
+                        "name": "Rod of Wonder Cooldown",
+                        "targetFilter": "caster"
+                    },
+                    {
+                        "duration": -5,
+                        "name": "Rod of Wonder (Originator)",
+                        "targetFilter": "caster"
+                    },
+                    {
+                        "copyChoiceFrom": "Rod of Wonder (Originator)",
+                        "duration": -5,
+                        "name": "Rod of Wonder",
+                        "targetFilter": "target"
+                    }
+                ],
+                "showSpells": [
+                    {
+                        "name": "Darkness"
+                    },
+                    {
+                        "name": "Lightning Bolt"
+                    },
+                    {
+                        "name": "Stinking Cloud"
+                    },
+                    {
+                        "name": "Vibrant Pattern"
+                    },
+                    {
+                        "name": "Mirror Image"
+                    },
+                    {
+                        "name": "Gust of Wind"
+                    },
+                    {
+                        "name": "Slow"
+                    },
+                    {
+                        "name": "Pest Form"
+                    },
+                    {
+                        "name": "Sleep"
+                    },
+                    {
+                        "name": "Fireball"
+                    },
+                    {
+                        "name": "Mind Reading"
+                    },
+                    {
+                        "name": "Enlarge"
+                    },
+                    {
+                        "name": "Faerie Fire"
+                    },
+                    {
+                        "name": "Invisibility"
+                    },
+                    {
+                        "name": "Shrink"
+                    }
+                ],
+                "desc": "Choose a creature within 60 feet and roll d% on the table below to determine the rods effect. If an entry lists only a spell name, the rod casts that spell at its lowest level. You make any decisions for a spell cast by the rod unless otherwise indicated, except that it must target the creature you chose, or the creature you chose must be the center of the spells area, if it has an area but no targets. If the spells range is less than 60 feet, increase the range to 60 feet.\n\nAny spell DC required is DC 27, and any spell attack roll required is +17. If the rod casts a spell on you, you don't get a saving throw or other defense against it.\n\nOnce activated, the rod can't be activated again for 1d4 hours.\n\n<strong>1-3</strong> Leaves grow from the target; they last 24 hours\n<strong>4-8</strong> Darkness\n<strong>9</strong> Summon a giant stag beetle (5th-level summon animal)\n<strong>10-13</strong> A stream of 600 large and colorful butterflies pours forth, fluttering in a 20-foot burst for 2 rounds; creatures are blinded while in the cloud of butterflies\n<strong>14-15</strong> All the target's weapons animate with the effects of the dancing rune\n<strong>16-25</strong> Lightning bolt\n<strong>26-29</strong> Grass grows in a 60-foot cone in front of the rod, or existing grass grows at 10 * normal rate\n<strong>30</strong> Target turns blue, green, or purple with an unlimited duration\n<strong>31</strong> Summon an elephant (6th-level summon animal)\n<strong>32-34</strong> Heavy rain falls in a 60-foot radius around you for 1 round\n<strong>35-38</strong> Stinking cloud\n<strong>39</strong> Summon an ineffective mouse (1st-level summon animal)\n<strong>40-42</strong> Vibrant pattern, with a 1-round duration\n<strong>43-44</strong> The rod casts mirror image on you\n<strong>45-46</strong> Gust of wind\n<strong>47-48</strong> The non-living, unattended object closest to the target (up to 30 cubic feet in size) turns ethereal for an unlimited duration\n<strong>49-53</strong> Slow\n<strong>54</strong> You turn blue, green, or purple with an unlimited duration\n<strong>55-59</strong> The rod casts pest form on you, lasting 1d4 rounds\n<strong>60-61</strong> 1d4 * 10 gems, each worth 1 sp, shoot from the rod, dealing 1 piercing damage to each creature in a 15-foot cone\n<strong>62</strong> Sleep, with a 100-foot burst\n<strong>63-72</strong> Fireball\n<strong>73-77</strong> Mind reading\n<strong>78-80</strong> Roll again; the target believes you created the effect of the second roll\n<strong>81-84</strong> Enlarge\n<strong>85-87</strong> Target is coated in nectar, making it clumsy 1 for 1 round\n<strong>88-92</strong> Faerie fire\n<strong>93-97</strong> The rod casts invisibility on you\n<strong>98-100</strong> The rod casts shrink on you, lasting 1 day",
+                "name": "Rod of Wonder",
+                "source": "ed7078eb-03aa-4de3-8409-90e82b7b5fb3",
+                "traits": [
+                    "Rare",
+                    "Chaotic",
+                    "Evocation",
+                    "Magical"
                 ]
             }
         ]
@@ -642,7 +742,7 @@
                 "actions": "2A",
                 "activationType": "Command, Interact",
                 "cooldown": 144000,
-                "desc": "You activate the statue by placing it on solid ground and then speaking its name, causing the statuette to transform into a pair of adult lions with the minion trait. They can understand your language and obey you to the best of their ability when you use an action to command them.\n\nIf either of the lions is slain, that lion cannot be summoned again until 1 week has passed, but this doesn’t prevent you from summoning the other. If both lions are slain while in animal form, the figurine reverts to its statue shape and cannot be activated again until 1 week has passed. If the figurine is destroyed in statue form, it is shattered and its magic is lost.",
+                "desc": "You activate the statue by placing it on solid ground and then speaking its name, causing the statuette to transform into a pair of adult lions with the minion trait. They can understand your language and obey you to the best of their ability when you use an action to command them.\n\nIf either of the lions is slain, that lion cannot be summoned again until 1 week has passed, but this doesn't prevent you from summoning the other. If both lions are slain while in animal form, the figurine reverts to its statue shape and cannot be activated again until 1 week has passed. If the figurine is destroyed in statue form, it is shattered and its magic is lost.",
                 "maxDuration": 6000,
                 "gainConditions": [
                     {
