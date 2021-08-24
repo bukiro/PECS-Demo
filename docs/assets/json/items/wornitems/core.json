@@ -726,17 +726,12 @@
             "Invested"
         ],
         "usage": "worn headwear",
-        "hints": [
+        "effects": [
             {
-                "desc": "The hat  grants you a +1 item bonus to Arcana checks.",
-                "showon": "Arcana",
-                "effects": [
-                    {
-                        "affected": "Arcana",
-                        "type": "item",
-                        "value": "1"
-                    }
-                ]
+                "_className": "EffectGain",
+                "affected": "Arcana",
+                "type": "item",
+                "value": 1
             }
         ],
         "gainSpells": [
@@ -1182,6 +1177,7 @@
                 "activationType": "Command",
                 "frequency": "once per day",
                 "cooldown": 144000,
+                "showonSkill": "Diplomacy",
                 "desc": "You wield your great stature to make a Request of a creature. If you roll a success on the check, you get a critical success instead.",
                 "traits": [
                     "Enchantment",
@@ -3074,6 +3070,51 @@
         ]
     },
     {
+        "name": "Ring of Lies",
+        "id": "0de44cf9-5fa2-4baa-8275-c1fa71868761",
+        "desc": "This plain silver ring has an almost oily sheen. While wearing the ring, you gain a +2 item bonus to Deception checks.",
+        "_className": "WornItem",
+        "level": 10,
+        "price": 85000,
+        "traits": [
+            "Uncommon",
+            "Enchantment",
+            "Invested",
+            "Magical"
+        ],
+        "usage": "worn",
+        "effects": [
+            {
+                "_className": "EffectGain",
+                "affected": "Deception",
+                "type": "item",
+                "value": "2"
+            }
+        ],
+        "activities": [
+            {
+                "_className": "ItemActivity",
+                "name": "Ring of Lies",
+                "source": "0de44cf9-5fa2-4baa-8275-c1fa71868761",
+                "actions": "2A",
+                "activationType": "Interact",
+                "desc": "Snapping your fingers on the hand that wears the ring causes the ring to cast glibness on you with no visual manifestations of a spell being cast.",
+                "castSpells": [
+                    {
+                        "_className": "SpellCast",
+                        "name": "Glibness"
+                    }
+                ],
+                "traits": [
+                    "Uncommon",
+                    "Enchantment",
+                    "Invested",
+                    "Magical"
+                ]
+            }
+        ]
+    },
+    {
         "name": "Winged Boots",
         "id": "b45d0723-ade2-4ffe-a220-5bfaaa66b890",
         "desc": "Made from soft leather, with delicate white wings attached to the heel, these boots are ensorcelled with powerful air magic. Whenever you fall while wearing these boots, the boots automatically cast feather fall on you. This benefit can't trigger again for 10 minutes.",
@@ -3134,7 +3175,7 @@
     },
     {
         "name": "Crafter's Eyepiece (Greater)",
-        "id": "66c0f3c3-3922-4c0a-b368-076213a1d1e8",
+        "id": "19cde2df-4421-4d01-a898-51d57d41787c",
         "desc": "This rugged metal eyepiece etched with square patterns is designed to be worn over a single eye. Twisting the lens reveals a faint three-dimensional outline of an item you plan to build or repair, with helpful labels on the component parts. While worn, this eyepiece gives you a +1 item bonus to Crafting checks. When you Repair an item, increase the Hit Points restored by 15 per proficiency rank instead of 10.",
         "_className": "WornItem",
         "level": 11,
@@ -3165,7 +3206,7 @@
             {
                 "_className": "ItemActivity",
                 "name": "Crafter's Eyepiece (Greater)",
-                "source": "66c0f3c3-3922-4c0a-b368-076213a1d1e8",
+                "source": "19cde2df-4421-4d01-a898-51d57d41787c",
                 "actions": "1 minute",
                 "activationType": "Interact",
                 "frequency": "once per day",

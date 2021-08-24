@@ -1316,7 +1316,7 @@
     },
     {
         "name": "Battle Prayer: Chaos",
-        "desc": "Calling out to your deity, you recite scripture to harm a foe.",
+        "desc": "Calling out to your deity, you recite scripture to harm a foe. This action has the chaotic trait and deals Chaotic damage.",
         "hints": [
             {
                 "desc": "Battle Prayer deals Chaotic damage.",
@@ -1347,7 +1347,7 @@
     },
     {
         "name": "Battle Prayer: Evil",
-        "desc": "Calling out to your deity, you recite scripture to harm a foe.",
+        "desc": "Calling out to your deity, you recite scripture to harm a foe. This action has the evil trait and deals Evil damage.",
         "hints": [
             {
                 "desc": "Battle Prayer deals Evil damage.",
@@ -1378,7 +1378,7 @@
     },
     {
         "name": "Battle Prayer: Good",
-        "desc": "Calling out to your deity, you recite scripture to harm a foe.",
+        "desc": "Calling out to your deity, you recite scripture to harm a foe. This action has the good trait and deals Good damage.",
         "hints": [
             {
                 "desc": "Battle Prayer deals Good damage.",
@@ -1409,7 +1409,7 @@
     },
     {
         "name": "Battle Prayer: Law",
-        "desc": "Calling out to your deity, you recite scripture to harm a foe.",
+        "desc": "Calling out to your deity, you recite scripture to harm a foe. This action has the lawful trait and deals Lawful damage.",
         "hints": [
             {
                 "desc": "Battle Prayer deals Lawful damage.",
@@ -9919,7 +9919,7 @@
         "subType": "Steed Ally",
         "superType": "Divine Ally",
         "shortdesc": "You gain a young animal companion as a mount.",
-        "gainAnimalCompanion": 1
+        "gainAnimalCompanion": "Young"
     },
     {
         "name": "Divine Skill",
@@ -22880,7 +22880,7 @@
         "levelreq": 1,
         "specialreq": "!characterService.get_CompanionAvailable() || this.have(character, characterService, charLevel)",
         "specialreqdesc": "no animal companion",
-        "gainAnimalCompanion": 1
+        "gainAnimalCompanion": "Young"
     },
     {
         "name": "Crossbow Ace",
@@ -23439,7 +23439,7 @@
                 "setValue": "2"
             }
         ],
-        "gainAnimalCompanion": 2
+        "gainAnimalCompanion": "Mature"
     },
     {
         "name": "Quick Snares",
@@ -23664,9 +23664,9 @@
         "featreq": [
             "Mature Animal Companion"
         ],
-        "specialreq": "!characterService.get_FeatsAndFeatures().some(feat => feat.gainAnimalCompanion == 5 && feat.have(character, characterService, 20, false))",
-        "specialreqdesc": "no savage animal companion",
-        "gainAnimalCompanion": 4
+        "specialreq": "!characterService.get_FeatsAndFeatures().some(feat => feat.gainAnimalCompanion && !['Young', 'Mature', 'Specialized', 'Nimble'].includes(feat.gainAnimalCompanion) && feat.have(character, characterService, 20, false))",
+        "specialreqdesc": "no advanced animal companion",
+        "gainAnimalCompanion": "Nimble"
     },
     {
         "name": "Incredible Companion (Ranger): Savage",
@@ -23682,9 +23682,9 @@
         "featreq": [
             "Mature Animal Companion"
         ],
-        "specialreq": "!characterService.get_FeatsAndFeatures().some(feat => feat.gainAnimalCompanion == 4 && feat.have(character, characterService, 20, false))",
-        "specialreqdesc": "no nimble animal companion",
-        "gainAnimalCompanion": 5
+        "specialreq": "!characterService.get_FeatsAndFeatures().some(feat => feat.gainAnimalCompanion && !['Young', 'Mature', 'Specialized', 'Savage'].includes(feat.gainAnimalCompanion) == 'Nimble' && feat.have(character, characterService, 20, false))",
+        "specialreqdesc": "no advanced animal companion",
+        "gainAnimalCompanion": "Savage"
     },
     {
         "name": "Master Monster Hunter",
@@ -23985,7 +23985,7 @@
                 "setValue": "3"
             }
         ],
-        "gainAnimalCompanion": 6
+        "gainAnimalCompanion": "Specialized"
     },
     {
         "name": "Ubiquitous Snares",
@@ -28130,7 +28130,7 @@
         "desc": "You have an intuitive sense that alerts you to the dangers and presence of traps. You gain a +1 circumstance bonus to Perception checks to find traps, to AC against attacks made by traps, and to saves against traps. Even if you aren't Searching, you get a check to find traps that normally require you to be Searching. You still need to meet any other requirements to find the trap.\n\nYou can disable traps that require a proficiency rank of master in Thievery. If you have master proficiency in Thievery, you can disable traps that require a proficiency rank of legendary instead, and your circumstance bonuses against traps increase to +2.",
         "hints": [
             {
-                "desc": "You gain a +1 circumstance bonus to Perception checks to find traps, to AC against attacks made by traps, and to saves against traps. If you have master proficiency in Thievery, your circumstance bonuses against traps increase to +2.\nEven if you aren't Searching, you get a check to find traps that normally require you to be Searching. You still need to meet any other requirements to find the trap.",
+                "desc": "You gain a +1 circumstance bonus to Perception checks to find traps, to AC against attacks made by traps, and to saves against traps. If you have master proficiency in Thievery, your circumstance bonuses against traps increase to +2.\n\nEven if you aren't Searching, you get a check to find traps that normally require you to be Searching. You still need to meet any other requirements to find the trap.",
                 "showon": "Perception, AC, Saving Throws",
                 "effects": [
                     {
@@ -38433,7 +38433,7 @@
         "hints": [
             {
                 "desc": "As long as you rest for 12 hours, you gain the effects of the Fast Recovery general feat and you can go 20 hours without resting before becoming fatigued. (Activate this before resting to gain the effect.)\n\nFast Recovery: You regain twice as many Hit Points from resting. Each time you succeed at a Fortitude save against an ongoing disease or poison, you reduce its stage by 2, or by 1 against a virulent disease or poison. Each critical success you achieve against an ongoing disease or poison reduces its stage by 3, or by 2 against a virulent disease or poison. In addition, you reduce the severity of your drained condition by 2 when you rest for a night instead of by 1.",
-                "showon": "Health, Fortitude",
+                "showon": "Rest, Fortitude",
                 "effects": [
                     {
                         "affected": "Resting HP Multiplier",
@@ -40159,7 +40159,7 @@
         ],
         "specialreq": "!characterService.get_CompanionAvailable() || this.have(character, characterService, charLevel)",
         "specialreqdesc": "no animal companion",
-        "gainAnimalCompanion": 1
+        "gainAnimalCompanion": "Young"
     },
     {
         "name": "Leshy Familiar",
@@ -40446,7 +40446,7 @@
                 "setValue": "2"
             }
         ],
-        "gainAnimalCompanion": 2
+        "gainAnimalCompanion": "Mature"
     },
     {
         "name": "Order Magic",
@@ -40750,9 +40750,9 @@
         "featreq": [
             "Mature Animal Companion"
         ],
-        "specialreq": "!characterService.get_FeatsAndFeatures().some(feat => feat.gainAnimalCompanion == 5 && feat.have(character, characterService, 20, false))",
-        "specialreqdesc": "no savage animal companion",
-        "gainAnimalCompanion": 4
+        "specialreq": "!characterService.get_FeatsAndFeatures().some(feat => feat.gainAnimalCompanion && !['Young', 'Mature', 'Specialized', 'Nimble'].includes(feat.gainAnimalCompanion) && feat.have(character, characterService, 20, false))",
+        "specialreqdesc": "no advanced animal companion",
+        "gainAnimalCompanion": "Nimble"
     },
     {
         "name": "Incredible Companion (Druid): Savage",
@@ -40768,9 +40768,9 @@
         "featreq": [
             "Mature Animal Companion"
         ],
-        "specialreq": "!characterService.get_FeatsAndFeatures().some(feat => feat.gainAnimalCompanion == 4 && feat.have(character, characterService, 20, false))",
-        "specialreqdesc": "no nimble animal companion",
-        "gainAnimalCompanion": 5
+        "specialreq": "!characterService.get_FeatsAndFeatures().some(feat => feat.gainAnimalCompanion && !['Young', 'Mature', 'Specialized', 'Savage'].includes(feat.gainAnimalCompanion) && feat.have(character, characterService, 20, false))",
+        "specialreqdesc": "no advanced animal companion",
+        "gainAnimalCompanion": "Savage"
     },
     {
         "name": "Soaring Shape",
@@ -41111,7 +41111,7 @@
                 "setValue": "3"
             }
         ],
-        "gainAnimalCompanion": 6
+        "gainAnimalCompanion": "Specialized"
     },
     {
         "name": "Timeless Nature",
