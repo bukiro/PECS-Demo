@@ -4185,6 +4185,9 @@
     {
         "_className": "Class",
         "name": "Champion",
+        "deityFocused": true,
+        "showDeityAnathema": true,
+        "showDeityEdicts": true,
         "warning": "Champion feats are not implemented yet.",
         "customSkills": [
             {
@@ -5592,12 +5595,18 @@
     {
         "_className": "Class",
         "name": "Cleric",
-        "warning": "Cleric functionality and feats are not implemented yet.",
+        "deityFocused": true,
+        "showDeityAnathema": true,
+        "showDeityEdicts": true,
         "customSkills": [
             {
                 "ability": "Wisdom",
                 "name": "Cleric Divine Spell DC",
                 "type": "Spell DC"
+            },
+            {
+                "name": "Favored Weapon",
+                "type": "Specific Weapon Proficiency"
             }
         ],
         "desc": [
@@ -5674,12 +5683,6 @@
                         "feats": [
                             {
                                 "locked": true,
-                                "name": "Divine Font",
-                                "source": "Cleric",
-                                "sourceId": "1-Feature-Cleric-0"
-                            },
-                            {
-                                "locked": true,
                                 "name": "Anathema (Cleric)",
                                 "source": "Cleric",
                                 "sourceId": "1-Feature-Cleric-0"
@@ -5712,6 +5715,30 @@
                         "source": "Cleric",
                         "specialChoice": true,
                         "type": "Doctrine"
+                    },
+                    {
+                        "_className": "FeatChoice",
+                        "available": 1,
+                        "filter": [
+                            "Divine Font"
+                        ],
+                        "id": "1-Divine Font-Cleric-1",
+                        "source": "Cleric",
+                        "autoSelectIfPossible": true,
+                        "specialChoice": true,
+                        "type": "Divine Font"
+                    },
+                    {
+                        "_className": "FeatChoice",
+                        "available": 1,
+                        "filter": [
+                            "Divine Skill"
+                        ],
+                        "id": "1-Divine Skill-Cleric-1",
+                        "source": "Cleric",
+                        "autoSelectIfPossible": true,
+                        "specialChoice": true,
+                        "type": "Divine Skill"
                     },
                     {
                         "_className": "FeatChoice",
@@ -5773,6 +5800,13 @@
                                 "locked": true,
                                 "maxRank": 2,
                                 "name": "Simple Weapons",
+                                "source": "Class",
+                                "sourceId": "1-Any-Class-0"
+                            },
+                            {
+                                "locked": true,
+                                "maxRank": 2,
+                                "name": "Favored Weapon",
                                 "source": "Class",
                                 "sourceId": "1-Any-Class-0"
                             },
@@ -6584,15 +6618,6 @@
             {
                 "_className": "SpellCasting",
                 "ability": "Wisdom",
-                "castingType": "Focus",
-                "charLevelAvailable": 0,
-                "className": "Cleric",
-                "source": "Domain Spells",
-                "tradition": "Divine"
-            },
-            {
-                "_className": "SpellCasting",
-                "ability": "Wisdom",
                 "castingType": "Prepared",
                 "charLevelAvailable": 1,
                 "className": "Cleric",
@@ -6796,20 +6821,6 @@
                         "level": 10,
                         "charLevelAvailable": 19,
                         "source": "Cleric Spellcasting",
-                        "castingType": "Prepared"
-                    },
-                    {
-                        "_className": "SpellChoice",
-                        "available": 1,
-                        "className": "Cleric",
-                        "filter": [
-                            "Harm",
-                            "Heal"
-                        ],
-                        "id": "8b5e3ea0-6116-4d7e-8197-a6cb787a5788",
-                        "dynamicLevel": "highestSpellLevel",
-                        "charLevelAvailable": 1,
-                        "source": "Divine Font",
                         "castingType": "Prepared"
                     }
                 ],
@@ -12073,7 +12084,7 @@
         "desc": [
             {
                 "name": "Description",
-                "value": "You are skilled and opportunistic . Using your sharp wits and quick reactions, you take advantage of your opponents' missteps and strike where it hurts most. You play a dangerous game, seeking thrills and testing your skills, and likely don't care much for any laws that happen to get in your way. While the path of every rogue is unique and riddled with danger, the one thing you all share in common is the breadth and depth of your skills."
+                "value": "You are skilled and opportunistic. Using your sharp wits and quick reactions, you take advantage of your opponents' missteps and strike where it hurts most. You play a dangerous game, seeking thrills and testing your skills, and likely don't care much for any laws that happen to get in your way. While the path of every rogue is unique and riddled with danger, the one thing you all share in common is the breadth and depth of your skills."
             },
             {
                 "name": "Key Ability",
