@@ -1,7 +1,6 @@
 [
     {
         "name": "Lastwall Soup",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 300,
         "bulk": "L",
@@ -19,7 +18,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Lastwall Soup",
                 "source": "Lastwall Soup"
@@ -28,7 +26,6 @@
     },
     {
         "name": "Antidote (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 300,
         "bulk": "L",
@@ -46,7 +43,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 36000,
                 "name": "Antidote (Lesser)",
                 "source": "Antidote (Lesser)"
@@ -55,7 +51,6 @@
     },
     {
         "name": "Antiplague (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 300,
         "bulk": "L",
@@ -73,7 +68,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Antiplague (Lesser)",
                 "source": "Antiplague (Lesser)"
@@ -82,7 +76,6 @@
     },
     {
         "name": "Cheetah's Elixir (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 300,
         "bulk": "L",
@@ -100,7 +93,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Cheetah's Elixir",
                 "source": "Cheetah's Elixir (Lesser)",
@@ -110,7 +102,6 @@
     },
     {
         "name": "Elixir of Life (Minor)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 300,
         "bulk": "L",
@@ -130,7 +121,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Elixir of Life (Minor)",
                 "source": "Elixir of Life (Minor)"
@@ -139,7 +129,6 @@
     },
     {
         "name": "Leaper's Elixir (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 300,
         "bulk": "L",
@@ -155,7 +144,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Leaper's Elixir (Lesser)",
                 "source": "Leaper's Elixir (Lesser)"
@@ -164,7 +152,6 @@
     },
     {
         "name": "Serene Mutagen (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -184,7 +171,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Serene Mutagen (Lesser)",
                 "source": "Serene Mutagen (Lesser)"
@@ -195,7 +181,6 @@
     },
     {
         "name": "Silvertongue Mutagen (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -215,7 +200,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Silvertongue Mutagen",
                 "source": "Silvertongue Mutagen (Lesser)",
@@ -227,7 +211,6 @@
     },
     {
         "name": "Bestial Mutagen (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -247,27 +230,10 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
-                "duration": 100,
+                "choice": "Lesser",
+                "duration": -5,
                 "name": "Bestial Mutagen",
-                "source": "Bestial Mutagen (Lesser)",
-                "value": 1
-            }
-        ],
-        "gainItems": [
-            {
-                "_className": "ItemGain",
-                "expiration": 100,
-                "name": "Bestial Mutagen Claw (Lesser)",
-                "type": "weapons",
-                "on": "use"
-            },
-            {
-                "_className": "ItemGain",
-                "expiration": 100,
-                "name": "Bestial Mutagen Jaws (Lesser)",
-                "type": "weapons",
-                "on": "use"
+                "source": "Bestial Mutagen (Lesser)"
             }
         ],
         "benefit": "You gain an item bonus to Athletics checks and unarmed attack rolls. You gain a claw unarmed attack with the agile trait and a jaws unarmed attack.",
@@ -275,7 +241,6 @@
     },
     {
         "name": "Cognitive Mutagen (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -295,7 +260,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Cognitive Mutagen (Lesser)",
                 "source": "Cognitive Mutagen (Lesser)"
@@ -306,7 +270,6 @@
     },
     {
         "name": "Eagle-Eye Elixir (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -324,7 +287,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Eagle-Eye Elixir",
                 "source": "Eagle-Eye Elixir (Lesser)",
@@ -334,7 +296,6 @@
     },
     {
         "name": "Juggernaut Mutagen (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -354,7 +315,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Juggernaut Mutagen (Lesser)",
                 "source": "Juggernaut Mutagen (Lesser)"
@@ -365,7 +325,6 @@
     },
     {
         "name": "Quicksilver Mutagen (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -385,7 +344,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Quicksilver Mutagen",
                 "source": "Quicksilver Mutagen (Lesser)",
@@ -403,7 +361,6 @@
     },
     {
         "name": "Energy Mutagen (Acid, Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -425,7 +382,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Energy Mutagen (Acid, Lesser)",
                 "source": "Energy Mutagen (Acid, Lesser)"
@@ -436,7 +392,6 @@
     },
     {
         "name": "Energy Mutagen (Cold, Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -458,7 +413,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Energy Mutagen (Cold, Lesser)",
                 "source": "Energy Mutagen (Cold, Lesser)"
@@ -469,7 +423,6 @@
     },
     {
         "name": "Energy Mutagen (Electricity, Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -491,7 +444,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Energy Mutagen (Electricity, Lesser)",
                 "source": "Energy Mutagen (Electricity, Lesser)"
@@ -502,7 +454,6 @@
     },
     {
         "name": "Energy Mutagen (Fire, Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 400,
         "bulk": "L",
@@ -524,7 +475,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Energy Mutagen (Fire, Lesser)",
                 "source": "Energy Mutagen (Fire, Lesser)"
@@ -535,7 +485,6 @@
     },
     {
         "name": "Darkvision Elixir (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 1,
         "price": 600,
         "bulk": "L",
@@ -553,7 +502,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Darkvision Elixir",
                 "source": "Darkvision Elixir (Lesser)"
@@ -562,7 +510,6 @@
     },
     {
         "name": "Infiltrator's Elixir",
-        "_className": "AlchemicalElixir",
         "level": 2,
         "price": 600,
         "bulk": "L",
@@ -579,7 +526,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Infiltrator's Elixir",
                 "source": "Infiltrator's Elixir"
@@ -588,7 +534,6 @@
     },
     {
         "name": "Bravo's Brew (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 2,
         "price": 700,
         "bulk": "L",
@@ -607,7 +552,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Bravo's Brew",
                 "source": "Bravo's Brew (Lesser)",
@@ -617,7 +561,6 @@
     },
     {
         "name": "Cat's Eye Elixir",
-        "_className": "AlchemicalElixir",
         "level": 2,
         "price": 700,
         "bulk": "L",
@@ -633,7 +576,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Cat's Eye Elixir",
                 "source": "Cat's Eye Elixir"
@@ -642,7 +584,6 @@
     },
     {
         "name": "Comprehension Elixir (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 2,
         "price": 700,
         "bulk": "L",
@@ -661,7 +602,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Comprehension Elixir",
                 "source": "Comprehension Elixir (Lesser)"
@@ -670,7 +610,6 @@
     },
     {
         "name": "Serene Mutagen (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 3,
         "price": 1200,
         "bulk": "L",
@@ -690,7 +629,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Serene Mutagen (Moderate)",
                 "source": "Serene Mutagen (Moderate)"
@@ -701,7 +639,6 @@
     },
     {
         "name": "Silvertongue Mutagen (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 3,
         "price": 1200,
         "bulk": "L",
@@ -721,7 +658,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Silvertongue Mutagen",
                 "source": "Silvertongue Mutagen (Moderate)",
@@ -733,7 +669,6 @@
     },
     {
         "name": "Bestial Mutagen (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 3,
         "price": 1200,
         "bulk": "L",
@@ -753,27 +688,10 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
-                "duration": 1000,
+                "choice": "Moderate",
+                "duration": -5,
                 "name": "Bestial Mutagen",
-                "source": "Bestial Mutagen (Moderate)",
-                "value": 2
-            }
-        ],
-        "gainItems": [
-            {
-                "_className": "ItemGain",
-                "expiration": 1000,
-                "name": "Bestial Mutagen Claw (Moderate)",
-                "type": "weapons",
-                "on": "use"
-            },
-            {
-                "_className": "ItemGain",
-                "expiration": 1000,
-                "name": "Bestial Mutagen Jaws (Moderate)",
-                "type": "weapons",
-                "on": "use"
+                "source": "Bestial Mutagen (Moderate)"
             }
         ],
         "benefit": "You gain an item bonus to Athletics checks and unarmed attack rolls. You gain a claw unarmed attack with the agile trait and a jaws unarmed attack.",
@@ -781,7 +699,6 @@
     },
     {
         "name": "Cognitive Mutagen (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 3,
         "price": 1200,
         "bulk": "L",
@@ -801,7 +718,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Cognitive Mutagen (Moderate)",
                 "source": "Cognitive Mutagen (Moderate)"
@@ -812,7 +728,6 @@
     },
     {
         "name": "Juggernaut Mutagen (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 3,
         "price": 1200,
         "bulk": "L",
@@ -832,7 +747,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Juggernaut Mutagen (Moderate)",
                 "source": "Juggernaut Mutagen (Moderate)"
@@ -843,7 +757,6 @@
     },
     {
         "name": "Quicksilver Mutagen (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 3,
         "price": 1200,
         "bulk": "L",
@@ -863,7 +776,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Quicksilver Mutagen",
                 "source": "Quicksilver Mutagen (Moderate)",
@@ -881,7 +793,6 @@
     },
     {
         "name": "Energy Mutagen (Acid, Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 3,
         "price": 1200,
         "bulk": "L",
@@ -903,7 +814,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Energy Mutagen (Acid, Moderate)",
                 "source": "Energy Mutagen (Acid, Moderate)"
@@ -914,7 +824,6 @@
     },
     {
         "name": "Energy Mutagen (Cold, Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 3,
         "price": 1200,
         "bulk": "L",
@@ -936,7 +845,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Energy Mutagen (Cold, Moderate)",
                 "source": "Energy Mutagen (Cold, Moderate)"
@@ -947,7 +855,6 @@
     },
     {
         "name": "Energy Mutagen (Electricity, Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 3,
         "price": 1200,
         "bulk": "L",
@@ -969,7 +876,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Energy Mutagen (Electricity, Moderate)",
                 "source": "Energy Mutagen (Electricity, Moderate)"
@@ -980,7 +886,6 @@
     },
     {
         "name": "Energy Mutagen (Fire, Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 3,
         "price": 1200,
         "bulk": "L",
@@ -1002,7 +907,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Energy Mutagen (Fire, Moderate)",
                 "source": "Energy Mutagen (Fire, Moderate)"
@@ -1013,7 +917,6 @@
     },
     {
         "name": "Darkvision Elixir (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 4,
         "price": 1100,
         "bulk": "L",
@@ -1031,7 +934,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Darkvision Elixir",
                 "source": "Darkvision Elixir (Moderate)"
@@ -1040,7 +942,6 @@
     },
     {
         "name": "Stone Fist Elixir",
-        "_className": "AlchemicalElixir",
         "level": 4,
         "price": 1300,
         "bulk": "L",
@@ -1057,7 +958,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Stone Fist Elixir",
                 "source": "Stone Fist Elixir"
@@ -1066,7 +966,6 @@
     },
     {
         "name": "Bomber's Eye Elixir (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 4,
         "price": 1400,
         "bulk": "L",
@@ -1084,7 +983,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 500,
                 "name": "Bomber's Eye Elixir (Lesser)",
                 "source": "Bomber's Eye Elixir (Lesser)"
@@ -1093,7 +991,6 @@
     },
     {
         "name": "Winter Wolf Elixir (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 4,
         "price": 1500,
         "bulk": "L",
@@ -1109,7 +1006,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Winter Wolf Elixir (Lesser)",
                 "source": "Winter Wolf Elixir (Lesser)"
@@ -1118,7 +1014,6 @@
     },
     {
         "name": "Salamander Elixir (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 4,
         "price": 1500,
         "bulk": "L",
@@ -1134,7 +1029,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Salamander Elixir (Lesser)",
                 "source": "Salamander Elixir (Lesser)"
@@ -1143,7 +1037,6 @@
     },
     {
         "name": "Mistform Elixir (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 4,
         "price": 1800,
         "bulk": "L",
@@ -1163,7 +1056,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 30,
                 "name": "Mistform Elixir",
                 "source": "Mistform Elixir (Lesser)"
@@ -1172,7 +1064,6 @@
     },
     {
         "name": "Sea Touch Elixir (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 5,
         "price": 2200,
         "bulk": "L",
@@ -1191,7 +1082,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Sea Touch Elixir (Lesser)",
                 "source": "Sea Touch Elixir (Lesser)"
@@ -1200,7 +1090,6 @@
     },
     {
         "name": "Stone Body Mutagen (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 5,
         "price": 2200,
         "bulk": "L",
@@ -1222,7 +1111,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Stone Body Mutagen",
                 "source": "Stone Body Mutagen (Lesser)",
@@ -1234,7 +1122,6 @@
     },
     {
         "name": "Cheetah's Elixir (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 5,
         "price": 2500,
         "bulk": "L",
@@ -1252,7 +1139,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Cheetah's Elixir",
                 "source": "Cheetah's Elixir (Moderate)",
@@ -1262,7 +1148,6 @@
     },
     {
         "name": "Eagle-Eye Elixir (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 5,
         "price": 2700,
         "bulk": "L",
@@ -1280,7 +1165,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Eagle-Eye Elixir",
                 "source": "Eagle-Eye Elixir (Moderate)",
@@ -1290,7 +1174,6 @@
     },
     {
         "name": "Elixir of Life (Lesser)",
-        "_className": "AlchemicalElixir",
         "level": 5,
         "price": 3000,
         "bulk": "L",
@@ -1310,7 +1193,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Elixir of Life (Lesser)",
                 "source": "Elixir of Life (Lesser)"
@@ -1319,7 +1201,6 @@
     },
     {
         "name": "Antidote (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 6,
         "price": 3500,
         "bulk": "L",
@@ -1337,7 +1218,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 36000,
                 "name": "Antidote (Moderate)",
                 "source": "Antidote (Moderate)"
@@ -1346,7 +1226,6 @@
     },
     {
         "name": "Antiplague (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 6,
         "price": 3500,
         "bulk": "L",
@@ -1364,7 +1243,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Antiplague (Moderate)",
                 "source": "Antiplague (Moderate)"
@@ -1373,7 +1251,6 @@
     },
     {
         "name": "Mistform Elixir (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 6,
         "price": 5600,
         "bulk": "L",
@@ -1393,7 +1270,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Mistform Elixir",
                 "source": "Mistform Elixir (Moderate)"
@@ -1402,7 +1278,6 @@
     },
     {
         "name": "Comprehension Elixir (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 7,
         "price": 5400,
         "bulk": "L",
@@ -1421,7 +1296,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Comprehension Elixir",
                 "source": "Comprehension Elixir (Greater)"
@@ -1430,7 +1304,6 @@
     },
     {
         "name": "Leaper's Elixir (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 7,
         "price": 5500,
         "bulk": "L",
@@ -1448,7 +1321,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 100,
                 "name": "Leaper's Elixir (Greater)",
                 "source": "Leaper's Elixir (Greater)"
@@ -1457,7 +1329,6 @@
     },
     {
         "name": "Darkvision Elixir (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 8,
         "price": 9000,
         "bulk": "L",
@@ -1475,7 +1346,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Darkvision Elixir",
                 "source": "Darkvision Elixir (Greater)"
@@ -1484,7 +1354,6 @@
     },
     {
         "name": "Cheetah's Elixir (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 9,
         "price": 11000,
         "bulk": "L",
@@ -1502,7 +1371,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Cheetah's Elixir",
                 "source": "Cheetah's Elixir (Greater)",
@@ -1512,7 +1380,6 @@
     },
     {
         "name": "Elixir of Life (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 9,
         "price": 15000,
         "bulk": "L",
@@ -1532,7 +1399,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Elixir of Life (Moderate)",
                 "source": "Elixir of Life (Moderate)"
@@ -1541,7 +1407,6 @@
     },
     {
         "name": "Bravo's Brew (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 10,
         "price": 15000,
         "bulk": "L",
@@ -1560,7 +1425,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Bravo's Brew",
                 "source": "Bravo's Brew (Moderate)",
@@ -1570,7 +1434,6 @@
     },
     {
         "name": "Antidote (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 10,
         "price": 16000,
         "bulk": "L",
@@ -1588,7 +1451,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 36000,
                 "name": "Antidote (Greater)",
                 "source": "Antidote (Greater)"
@@ -1597,7 +1459,6 @@
     },
     {
         "name": "Antiplague (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 10,
         "price": 16000,
         "bulk": "L",
@@ -1615,7 +1476,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Antiplague (Greater)",
                 "source": "Antiplague (Greater)"
@@ -1624,7 +1484,6 @@
     },
     {
         "name": "Mistform Elixir (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 10,
         "price": 18000,
         "bulk": "L",
@@ -1644,7 +1503,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 500,
                 "name": "Mistform Elixir",
                 "source": "Mistform Elixir (Greater)"
@@ -1653,7 +1511,6 @@
     },
     {
         "name": "Eagle-Eye Elixir (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 10,
         "price": 20000,
         "bulk": "L",
@@ -1671,7 +1528,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Eagle-Eye Elixir",
                 "source": "Eagle-Eye Elixir (Greater)",
@@ -1681,7 +1537,6 @@
     },
     {
         "name": "Serene Mutagen (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 11,
         "price": 30000,
         "bulk": "L",
@@ -1701,7 +1556,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Serene Mutagen (Greater)",
                 "source": "Serene Mutagen (Greater)"
@@ -1712,7 +1566,6 @@
     },
     {
         "name": "Silvertongue Mutagen (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 11,
         "price": 30000,
         "bulk": "L",
@@ -1732,7 +1585,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Silvertongue Mutagen",
                 "source": "Silvertongue Mutagen (Greater)",
@@ -1744,7 +1596,6 @@
     },
     {
         "name": "Bestial Mutagen (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 11,
         "price": 30000,
         "bulk": "L",
@@ -1764,27 +1615,10 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
-                "duration": 6000,
+                "choice": "Greater",
+                "duration": -5,
                 "name": "Bestial Mutagen",
-                "source": "Bestial Mutagen (Greater)",
-                "value": 3
-            }
-        ],
-        "gainItems": [
-            {
-                "_className": "ItemGain",
-                "expiration": 6000,
-                "name": "Bestial Mutagen Claw (Greater)",
-                "type": "weapons",
-                "on": "use"
-            },
-            {
-                "_className": "ItemGain",
-                "expiration": 6000,
-                "name": "Bestial Mutagen Jaws (Greater)",
-                "type": "weapons",
-                "on": "use"
+                "source": "Bestial Mutagen (Greater)"
             }
         ],
         "benefit": "You gain an item bonus to Athletics checks and unarmed attack rolls. You gain a claw unarmed attack with the agile trait and a jaws unarmed attack.",
@@ -1792,7 +1626,6 @@
     },
     {
         "name": "Cognitive Mutagen (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 11,
         "price": 30000,
         "bulk": "L",
@@ -1812,7 +1645,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Cognitive Mutagen (Greater)",
                 "source": "Cognitive Mutagen (Greater)"
@@ -1823,7 +1655,6 @@
     },
     {
         "name": "Juggernaut Mutagen (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 11,
         "price": 30000,
         "bulk": "L",
@@ -1843,7 +1674,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Juggernaut Mutagen (Greater)",
                 "source": "Juggernaut Mutagen (Greater)"
@@ -1854,7 +1684,6 @@
     },
     {
         "name": "Quicksilver Mutagen (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 11,
         "price": 30000,
         "bulk": "L",
@@ -1874,7 +1703,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Quicksilver Mutagen",
                 "source": "Quicksilver Mutagen (Greater)",
@@ -1892,7 +1720,6 @@
     },
     {
         "name": "Energy Mutagen (Acid, Greater)",
-        "_className": "AlchemicalElixir",
         "level": 11,
         "price": 30000,
         "bulk": "L",
@@ -1914,7 +1741,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Energy Mutagen (Acid, Greater)",
                 "source": "Energy Mutagen (Acid, Greater)"
@@ -1925,7 +1751,6 @@
     },
     {
         "name": "Energy Mutagen (Cold, Greater)",
-        "_className": "AlchemicalElixir",
         "level": 11,
         "price": 30000,
         "bulk": "L",
@@ -1947,7 +1772,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Energy Mutagen (Cold, Greater)",
                 "source": "Energy Mutagen (Cold, Greater)"
@@ -1958,7 +1782,6 @@
     },
     {
         "name": "Energy Mutagen (Electricity, Greater)",
-        "_className": "AlchemicalElixir",
         "level": 11,
         "price": 30000,
         "bulk": "L",
@@ -1980,7 +1803,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Energy Mutagen (Electricity, Greater)",
                 "source": "Energy Mutagen (Electricity, Greater)"
@@ -1991,7 +1813,6 @@
     },
     {
         "name": "Energy Mutagen (Fire, Greater)",
-        "_className": "AlchemicalElixir",
         "level": 11,
         "price": 30000,
         "bulk": "L",
@@ -2013,7 +1834,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Energy Mutagen (Fire, Greater)",
                 "source": "Energy Mutagen (Fire, Greater)"
@@ -2024,7 +1844,6 @@
     },
     {
         "name": "Sea Touch Elixir (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 12,
         "price": 30000,
         "bulk": "L",
@@ -2043,7 +1862,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Sea Touch Elixir",
                 "source": "Sea Touch Elixir (Moderate)"
@@ -2052,7 +1870,6 @@
     },
     {
         "name": "Stone Body Mutagen (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 12,
         "price": 30000,
         "bulk": "L",
@@ -2074,7 +1891,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Stone Body Mutagen",
                 "source": "Stone Body Mutagen (Moderate)",
@@ -2086,7 +1902,6 @@
     },
     {
         "name": "Winter Wolf Elixir (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 12,
         "price": 32000,
         "bulk": "L",
@@ -2104,7 +1919,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Winter Wolf Elixir (Moderate)",
                 "source": "Winter Wolf Elixir (Moderate)"
@@ -2113,7 +1927,6 @@
     },
     {
         "name": "Salamander Elixir (Moderate)",
-        "_className": "AlchemicalElixir",
         "level": 12,
         "price": 32000,
         "bulk": "L",
@@ -2131,7 +1944,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Salamander Elixir (Moderate)",
                 "source": "Salamander Elixir (Moderate)"
@@ -2140,7 +1952,6 @@
     },
     {
         "name": "Elixir of Life (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 13,
         "price": 60000,
         "bulk": "L",
@@ -2160,7 +1971,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Elixir of Life (Greater)",
                 "source": "Elixir of Life (Greater)"
@@ -2169,7 +1979,6 @@
     },
     {
         "name": "Antidote (Major)",
-        "_className": "AlchemicalElixir",
         "level": 14,
         "price": 67500,
         "bulk": "L",
@@ -2187,7 +1996,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 36000,
                 "name": "Antidote (Major)",
                 "source": "Antidote (Major)"
@@ -2196,7 +2004,6 @@
     },
     {
         "name": "Antiplague (Major)",
-        "_className": "AlchemicalElixir",
         "level": 14,
         "price": 67500,
         "bulk": "L",
@@ -2214,7 +2021,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Antiplague (Major)",
                 "source": "Antiplague (Major)"
@@ -2223,7 +2029,6 @@
     },
     {
         "name": "Bomber's Eye Elixir (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 14,
         "price": 70000,
         "bulk": "L",
@@ -2241,7 +2046,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 500,
                 "name": "Bomber's Eye Elixir (Greater)",
                 "source": "Bomber's Eye Elixir (Greater)"
@@ -2250,7 +2054,6 @@
     },
     {
         "name": "Bravo's Brew (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 15,
         "price": 70000,
         "bulk": "L",
@@ -2269,7 +2072,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Bravo's Brew (Greater)",
                 "source": "Bravo's Brew (Greater)",
@@ -2279,7 +2081,6 @@
     },
     {
         "name": "Sea Touch Elixir (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 15,
         "price": 92000,
         "bulk": "L",
@@ -2298,7 +2099,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Sea Touch Elixir",
                 "source": "Sea Touch Elixir (Greater)"
@@ -2307,7 +2107,6 @@
     },
     {
         "name": "Stone Body Mutagen (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 15,
         "price": 92000,
         "bulk": "L",
@@ -2329,7 +2128,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Stone Body Mutagen",
                 "source": "Stone Body Mutagen (Greater)",
@@ -2341,7 +2139,6 @@
     },
     {
         "name": "Elixir of Life (Major)",
-        "_className": "AlchemicalElixir",
         "level": 15,
         "price": 130000,
         "bulk": "L",
@@ -2361,7 +2158,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Elixir of Life (Major)",
                 "source": "Elixir of Life (Major)"
@@ -2370,7 +2166,6 @@
     },
     {
         "name": "Winter Wolf Elixir (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 16,
         "price": 140000,
         "bulk": "L",
@@ -2388,7 +2183,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Winter Wolf Elixir (Greater)",
                 "source": "Winter Wolf Elixir (Greater)"
@@ -2397,7 +2191,6 @@
     },
     {
         "name": "Salamander Elixir (Greater)",
-        "_className": "AlchemicalElixir",
         "level": 16,
         "price": 140000,
         "bulk": "L",
@@ -2415,7 +2208,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 144000,
                 "name": "Salamander Elixir (Greater)",
                 "source": "Salamander Elixir (Greater)"
@@ -2424,7 +2216,6 @@
     },
     {
         "name": "Eagle-Eye Elixir (Major)",
-        "_className": "AlchemicalElixir",
         "level": 16,
         "price": 200000,
         "bulk": "L",
@@ -2442,7 +2233,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Eagle-Eye Elixir (Major)",
                 "source": "Eagle-Eye Elixir (Major)",
@@ -2452,7 +2242,6 @@
     },
     {
         "name": "Serene Mutagen (Major)",
-        "_className": "AlchemicalElixir",
         "level": 17,
         "price": 300000,
         "bulk": "L",
@@ -2472,7 +2261,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Serene Mutagen (Major)",
                 "source": "Serene Mutagen (Major)"
@@ -2483,7 +2271,6 @@
     },
     {
         "name": "Silvertongue Mutagen (Major)",
-        "_className": "AlchemicalElixir",
         "level": 17,
         "price": 300000,
         "bulk": "L",
@@ -2503,7 +2290,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Silvertongue Mutagen",
                 "source": "Silvertongue Mutagen (Major)",
@@ -2515,7 +2301,6 @@
     },
     {
         "name": "Bestial Mutagen (Major)",
-        "_className": "AlchemicalElixir",
         "level": 17,
         "price": 300000,
         "bulk": "L",
@@ -2535,27 +2320,10 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
-                "duration": 6000,
+                "choice": "Major",
+                "duration": -5,
                 "name": "Bestial Mutagen",
-                "source": "Bestial Mutagen (Major)",
-                "value": 4
-            }
-        ],
-        "gainItems": [
-            {
-                "_className": "ItemGain",
-                "expiration": 6000,
-                "name": "Bestial Mutagen Claw (Major)",
-                "type": "weapons",
-                "on": "use"
-            },
-            {
-                "_className": "ItemGain",
-                "expiration": 6000,
-                "name": "Bestial Mutagen Jaws (Major)",
-                "type": "weapons",
-                "on": "use"
+                "source": "Bestial Mutagen (Major)"
             }
         ],
         "benefit": "You gain an item bonus to Athletics checks and unarmed attack rolls. You gain a claw unarmed attack with the agile trait and a jaws unarmed attack.",
@@ -2563,7 +2331,6 @@
     },
     {
         "name": "Cognitive Mutagen (Major)",
-        "_className": "AlchemicalElixir",
         "level": 17,
         "price": 300000,
         "bulk": "L",
@@ -2583,7 +2350,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Cognitive Mutagen (Major)",
                 "source": "Cognitive Mutagen (Major)"
@@ -2594,7 +2360,6 @@
     },
     {
         "name": "Juggernaut Mutagen (Major)",
-        "_className": "AlchemicalElixir",
         "level": 17,
         "price": 300000,
         "bulk": "L",
@@ -2614,7 +2379,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Juggernaut Mutagen (Major)",
                 "source": "Juggernaut Mutagen (Major)"
@@ -2625,7 +2389,6 @@
     },
     {
         "name": "Quicksilver Mutagen (Major)",
-        "_className": "AlchemicalElixir",
         "level": 17,
         "price": 300000,
         "bulk": "L",
@@ -2645,7 +2408,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Quicksilver Mutagen",
                 "source": "Quicksilver Mutagen (Major)",
@@ -2663,7 +2425,6 @@
     },
     {
         "name": "Energy Mutagen (Acid, Major)",
-        "_className": "AlchemicalElixir",
         "level": 17,
         "price": 300000,
         "bulk": "L",
@@ -2685,7 +2446,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Energy Mutagen (Acid, Major)",
                 "source": "Energy Mutagen (Acid, Major)"
@@ -2696,7 +2456,6 @@
     },
     {
         "name": "Energy Mutagen (Cold, Major)",
-        "_className": "AlchemicalElixir",
         "level": 17,
         "price": 300000,
         "bulk": "L",
@@ -2718,7 +2477,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Energy Mutagen (Cold, Major)",
                 "source": "Energy Mutagen (Cold, Major)"
@@ -2729,7 +2487,6 @@
     },
     {
         "name": "Energy Mutagen (Electricity, Major)",
-        "_className": "AlchemicalElixir",
         "level": 17,
         "price": 300000,
         "bulk": "L",
@@ -2751,7 +2508,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Energy Mutagen (Electricity, Major)",
                 "source": "Energy Mutagen (Electricity, Major)"
@@ -2762,7 +2518,6 @@
     },
     {
         "name": "Energy Mutagen (Fire, Major)",
-        "_className": "AlchemicalElixir",
         "level": 17,
         "price": 300000,
         "bulk": "L",
@@ -2784,7 +2539,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 6000,
                 "name": "Energy Mutagen (Fire, Major)",
                 "source": "Energy Mutagen (Fire, Major)"
@@ -2795,7 +2549,6 @@
     },
     {
         "name": "Elixir of Life (True)",
-        "_className": "AlchemicalElixir",
         "level": 19,
         "price": 800000,
         "bulk": "L",
@@ -2815,7 +2568,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 1000,
                 "name": "Elixir of Life (True)",
                 "source": "Elixir of Life (True)"
@@ -2824,7 +2576,6 @@
     },
     {
         "name": "Sun Orchid Elixir",
-        "_className": "AlchemicalElixir",
         "level": 20,
         "bulk": "L",
         "id": "eee1c9b4-a916-11ea-bb37-0242ac130002",
@@ -2850,7 +2601,6 @@
     },
     {
         "name": "Elixir of Rejuvenation",
-        "_className": "AlchemicalElixir",
         "level": 20,
         "bulk": "L",
         "id": "eee1ca72-a916-11ea-bb37-0242ac130002",
@@ -2868,7 +2618,6 @@
         ],
         "gainConditions": [
             {
-                "_className": "ConditionGain",
                 "duration": 0,
                 "name": "Elixir of Rejuvenation",
                 "source": "Elixir of Rejuvenation"
