@@ -187,6 +187,84 @@
         ]
     },
     {
+        "name": "Necklace of Knives",
+        "id": "e123c192-0b00-4ad3-afd9-026efe8960be",
+        "desc": "This necklace strung with miniature stone throwing knives. As long as you wear it, you are never without a weapon, a crude surgical tool, or stake for a vampire, if necessary in following Pharasma's teachings.",
+        "access": "follower of Pharasma",
+        "sourceBook": "Gods & Magic",
+        "level": 2,
+        "price": 2500,
+        "traits": [
+            "Uncommon",
+            "Conjuration",
+            "Invested",
+            "Magical"
+        ],
+        "usage": "worn",
+        "activities": [
+            {
+                "name": "Necklace of Knives: Steel Dagger",
+                "actions": "1A",
+                "activationType": "Interact",
+                "desc": "You pluck a miniature knife from the necklace, and it grows into a normal steel dagger for as long as you hold it, fading away 1 round after it leaves your hand. No matter how many knives you pull from the necklace, you never seem to deplete them.",
+                "gainItems": [
+                    {
+                        "id": "a86c588a-aedb-4fa5-8c30-e4d4d991dd44",
+                        "expiration": 10,
+                        "expiresOnlyIf": "unequipped",
+                        "type": "weapons"
+                    }
+                ],
+                "traits": [
+                    "Uncommon",
+                    "Conjuration",
+                    "Invested",
+                    "Magical"
+                ]
+            },
+            {
+                "name": "Necklace of Knives: Stone Dagger",
+                "actions": "1A",
+                "activationType": "Interact",
+                "desc": "You pluck a miniature knife from the necklace, and it grows into a normal stone dagger for as long as you hold it, fading away 1 round after it leaves your hand. No matter how many knives you pull from the necklace, you never seem to deplete them.",
+                "gainItems": [
+                    {
+                        "id": "cde099b4-05b9-48a0-86a3-316c2b485722",
+                        "expiration": 10,
+                        "expiresOnlyIf": "unequipped",
+                        "type": "weapons"
+                    }
+                ],
+                "traits": [
+                    "Uncommon",
+                    "Conjuration",
+                    "Invested",
+                    "Magical"
+                ]
+            },
+            {
+                "name": "Necklace of Knives: Wooden Dagger",
+                "actions": "1A",
+                "activationType": "Interact",
+                "desc": "You pluck a miniature knife from the necklace, and it grows into a normal wooden dagger for as long as you hold it, fading away 1 round after it leaves your hand. No matter how many knives you pull from the necklace, you never seem to deplete them. Wooden daggers from the necklace are as effective as ordinary steel daggers and can be useful to stake vampires.",
+                "gainItems": [
+                    {
+                        "id": "85062217-d2f6-457b-92e7-5b9e26215a12",
+                        "expiration": 10,
+                        "expiresOnlyIf": "unequipped",
+                        "type": "weapons"
+                    }
+                ],
+                "traits": [
+                    "Uncommon",
+                    "Conjuration",
+                    "Invested",
+                    "Magical"
+                ]
+            }
+        ]
+    },
+    {
         "name": "Wayfinder",
         "id": "4c5d0fa0-fb67-4e5a-80af-dd450eba7cf4",
         "desc": "This compact compass repurposes ancient technology to draw fantastic powers from the mysterious magical items called aeon stones. It serves as a badge of office for agents of the Pathfinder Society and as a status symbol among adventurers of any stripe. A wayfinder functions as a compass.\n\nAn indentation in the middle of the wayfinder can hold a single aeon stone. Placing an aeon stone in this indentation provides you all the benefits of having the aeon stone orbiting your head, but it protects the stone from being noticed or stolen as easily. You invest a wayfinder and the aeon stone within it simultaneously, and they count as only one item toward your investiture limit. An invested aeon stone slotted in a wayfinder also grants its resonant power.\n\nIf you have more than one wayfinder with an invested aeon stone on your person at a given time, destructive interference from their resonance prevents you from gaining benefits from any of them. You can still benefit from additional aeon stones orbiting your head, just not in wayfinders.\n\nAll Pathfinders have access.",
@@ -2000,6 +2078,40 @@
         ]
     },
     {
+        "name": "Boots of Bounding",
+        "id": "255e8b1a-a021-4b65-b1ae-e58f558fd177",
+        "desc": "The springy soles of these sturdy leather boots cushion your feet and make each step lighter. These boots give you a +5-foot item bonus to your Speed and a +2 item bonus to Athletics checks to High Jump and Long Jump. In addition, when you use the Leap action, you can move 5 feet further if jumping horizontally or 3 feet higher if jumping vertically.",
+        "level": 7,
+        "bulk": "L",
+        "price": 34000,
+        "traits": [
+            "Invested",
+            "Magical",
+            "Transmutation"
+        ],
+        "usage": "worn cloak",
+        "hints": [
+            {
+                "desc": "You gain a +2 item bonus to Athletics checks to High Jump and Long Jump. In addition, when you use the Leap action, you can move 5 feet further if jumping horizontally or 3 feet higher if jumping vertically.",
+                "showon": "Athletics",
+                "effects": [
+                    {
+                        "affected": "Athletics",
+                        "type": "item",
+                        "value": "+2"
+                    }
+                ]
+            }
+        ],
+        "effects": [
+            {
+                "affected": "Land Speed",
+                "type": "item",
+                "value": "+5"
+            }
+        ]
+    },
+    {
         "name": "Cloak of Elvenkind",
         "id": "b0a0fc41-b6cc-4dba-870c-efdd0468e448",
         "desc": "This cloak is deep green with a voluminous hood, embroidered with gold trim and symbols significant in elven culture. The cloak allows you to cast the ghost sound cantrip as an arcane innate spell. When you adjust the cloak's clasp (an Interact action), the cloak transforms to match the environment around you and muffles your sounds, granting you a +1 item bonus to Stealth checks.",
@@ -2016,7 +2128,7 @@
             {
                 "affected": "Stealth",
                 "type": "item",
-                "value": 1
+                "value": "+1"
             }
         ],
         "activities": [
@@ -2448,6 +2560,64 @@
                 "affected": "Survival",
                 "type": "item",
                 "value": 2
+            }
+        ]
+    },
+    {
+        "name": "Hat of the Magi (Greater)",
+        "id": "3577b394-43c4-47bc-983b-c1c1a69da026",
+        "desc": "This hat comes in many forms, such as a colorful turban or a pointy hat with a brim, and can bear symbols or runes. It grants you a +1 item bonus to Arcana checks and allows you to cast the prestidigitation cantrip as an arcane innate spell.",
+        "level": 9,
+        "bulk": "L",
+        "price": 65000,
+        "subType": "Greater",
+        "subTypeDesc": "This larger, fancier hat grants a +2 bonus and can be activated.",
+        "traits": [
+            "Arcane",
+            "Conjuration",
+            "Invested"
+        ],
+        "usage": "worn headwear",
+        "effects": [
+            {
+                "affected": "Arcana",
+                "type": "item",
+                "value": "+2"
+            }
+        ],
+        "activities": [
+            {
+                "name": "Hat of the Magi (Greater)",
+                "source": "3577b394-43c4-47bc-983b-c1c1a69da026",
+                "actions": "3A",
+                "activationType": "Cast a Spell",
+                "frequency": "once per day",
+                "cooldown": 144000,
+                "desc": "You cast a 4th-level arcane summon elemental spell.",
+                "castSpells": [
+                    {
+                        "level": 4,
+                        "name": "Summon Elemental"
+                    }
+                ],
+                "traits": [
+                    "Arcane",
+                    "Conjuration",
+                    "Invested"
+                ]
+            }
+        ],
+        "gainSpells": [
+            {
+                "frequency": "at will",
+                "level": 0,
+                "tradition": "Arcane",
+                "spells": [
+                    {
+                        "locked": true,
+                        "name": "Prestidigitation"
+                    }
+                ]
             }
         ]
     },
