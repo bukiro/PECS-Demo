@@ -14,6 +14,22 @@
         "desc": "The display name will be shown instead of the name if set and doesn't change with runes. The display name can be changed later in the inventory."
     },
     {
+        "key": "iconTitleOverride",
+        "priority": "02",
+        "group": "1-Name",
+        "name": "Icon title override",
+        "desc": "The item's display name or name will be shortened to its first four capital letters on icons. If this field has a value, it will be used instead, up to its fourth letter.",
+        "examples": "icontitleoverride"
+    },
+    {
+        "key": "iconValueOverride",
+        "priority": "03",
+        "group": "1-Name",
+        "name": "Icon value override",
+        "desc": "Some aspects of the item are shown in the upper left corner of its icon. If this field has a value, it will be used instead, up to its sixth letter.",
+        "examples": "iconvalueoverride"
+    },
+    {
         "key": "bulk",
         "priority": "00",
         "group": "2-Basics",
@@ -90,6 +106,14 @@
         "desc": "Notes that can be displayed on the item. The notes can be changed later."
     },
     {
+        "key": "choices",
+        "priority": "07",
+        "group": "2-Basics",
+        "name": "Variation options",
+        "desc": "Some items can be attuned to or affiliated with different things, which can change the way the item's effects and hints work. These options can be added here, and the selected option can be referenced in effect calculations as the word 'Choice'. Unlike with bought items, custom items will always allow you to change the chosen option later.",
+        "examples": "choices"
+    },
+    {
         "key": "prof",
         "priority": "00",
         "group": "3-Usage",
@@ -163,7 +187,7 @@
         "priority": "00",
         "group": "4-Actions and Activities",
         "name": "Unique actions or activities",
-        "desc": "Add a definition of what happens when this item is activated. It can include, for example, numeral effects, casting spells or adding items for the duration. If an item has multiple activities, only one of them can be active at the same time."
+        "desc": "Add a definition of what happens when this item is activated. It can include, for example, numeral effects, casting spells or adding items for the duration."
     },
     {
         "parent": "activities",
@@ -183,8 +207,26 @@
     },
     {
         "parent": "activities",
-        "key": "traits",
+        "key": "iconTitleOverride",
+        "priority": "01",
+        "group": "",
+        "name": "Icon title override",
+        "desc": "The activity's name will be shortened to its first four capital letters on icons. If this field has a value, it will be used instead, up to its fourth letter.",
+        "examples": "activity"
+    },
+    {
+        "parent": "activities",
+        "key": "iconValueOverride",
         "priority": "02",
+        "group": "",
+        "name": "Icon value override",
+        "desc": "This value will be shown in the upper left corner of the activity's icon, up to its sixth letter.",
+        "examples": "activity"
+    },
+    {
+        "parent": "activities",
+        "key": "traits",
+        "priority": "03",
         "group": "",
         "name": "Traits",
         "desc": "The activity traits are listed on the item.",
@@ -194,7 +236,7 @@
     {
         "parent": "activities",
         "key": "actions",
-        "priority": "03",
+        "priority": "04",
         "group": "",
         "name": "Time required to use",
         "desc": "Number of actions to activate this item. Can be free or reaction, a number of actions, or an individual amount of time, like 1 hour.",
@@ -203,7 +245,7 @@
     {
         "parent": "activities",
         "key": "activationType",
-        "priority": "04",
+        "priority": "05",
         "group": "",
         "name": "Activation type",
         "desc": "Type of action used to activate this item, like 'Command' or 'Interact'.",
@@ -213,7 +255,7 @@
     {
         "parent": "activities",
         "key": "hints",
-        "priority": "05",
+        "priority": "06",
         "group": "",
         "name": "Hints",
         "desc": "You can show hints to this activity while it is active, or always if it can't be toggled, e.g. on individual skills. These hints can include effects that can be turned on and off."
@@ -221,7 +263,7 @@
     {
         "parent": "activities",
         "key": "toggle",
-        "priority": "06",
+        "priority": "07",
         "group": "",
         "name": "Permanent",
         "desc": "Set this if the item stays activated until you deactivate it, e.g. if the item grants you a stance or another item while it is active.",
@@ -230,7 +272,7 @@
     {
         "parent": "activities",
         "key": "cooldown",
-        "priority": "07",
+        "priority": "08",
         "group": "",
         "name": "Cooldown",
         "desc": "How long you have to wait to activate this item after activating it once, in turns * 10. (1 hour is 6000, 1 day is 144000.)",
@@ -241,7 +283,7 @@
     {
         "parent": "activities",
         "key": "frequency",
-        "priority": "08",
+        "priority": "09",
         "group": "",
         "name": "Frequency",
         "desc": "A description of how often you can use this item, as defined by the cooldown. Often 'once per hour' or 'once per day'.",
@@ -250,7 +292,7 @@
     {
         "parent": "activities",
         "key": "charges",
-        "priority": "09",
+        "priority": "10",
         "group": "",
         "name": "Charges",
         "desc": "How often can you use this activation within one cooldown period. If the item has any charges, the cooldown starts after the first use, but the item can still be used as long as it has charges left. If the activity has charges and no cooldown, it can never be recharged.",
@@ -261,7 +303,7 @@
     {
         "parent": "activities",
         "key": "sharedChargesID",
-        "priority": "10",
+        "priority": "11",
         "group": "",
         "name": "Shared Charges ID",
         "desc": "Activities on the same item that have the same ID (other than 0) share their charges with each other.",
@@ -271,7 +313,7 @@
     {
         "parent": "activities",
         "key": "cost",
-        "priority": "11",
+        "priority": "12",
         "group": "",
         "name": "Cost",
         "desc": "Describe the cost (usually materials) for the activity. This is only for the player and has no mechanical function.",
@@ -280,7 +322,7 @@
     {
         "parent": "activities",
         "key": "trigger",
-        "priority": "12",
+        "priority": "13",
         "group": "",
         "name": "Trigger",
         "desc": "Some items can be activated in a certain situation, like when you are about to be attacked. You can describe this trigger here. This is not reflected in the program, but helps the user understand the item.",
@@ -289,7 +331,7 @@
     {
         "parent": "activities",
         "key": "requirements",
-        "priority": "13",
+        "priority": "14",
         "group": "",
         "name": "Requirements",
         "desc": "Some items can only be activated when certain requirements are met. You can describe the requirements here. This is not reflected in the program, but helps the user understand the item.",
@@ -298,7 +340,7 @@
     {
         "parent": "activities",
         "key": "gainItems",
-        "priority": "14",
+        "priority": "15",
         "group": "",
         "name": "Grant additional items",
         "desc": "Add additional items when this item is activated. If the activation is permanent, the item is lost at deactivation."
@@ -306,7 +348,7 @@
     {
         "parent": "activities",
         "key": "castSpells",
-        "priority": "15",
+        "priority": "16",
         "group": "",
         "name": "Cast spells",
         "desc": "Cast spells when this item is activated."
@@ -328,7 +370,7 @@
         "name": "Spell level",
         "desc": "The spell level on which the spell is cast, between 0 and 10. 0 means the spell is heightened to the half the character level, rounded up.",
         "locked": true,
-        "examples": "spelllevel"
+        "examples": "spelllevels"
     },
     {
         "parent": "castSpells",
@@ -338,12 +380,12 @@
         "name": "Spell duration",
         "desc": "A specific duration for the spell other than the spell's original duration, in turns * 10. (1 hour is 6000, 1 day is 144000.)",
         "type": "number",
-        "validation":"-1plus"
+        "validation": "-1plus"
     },
     {
         "parent": "activities",
         "key": "gainConditions",
-        "priority": "16",
+        "priority": "17",
         "group": "",
         "name": "Cause conditions",
         "desc": "Add known conditions that will be caused when this item is activated."
@@ -351,7 +393,7 @@
     {
         "parent": "activities",
         "key": "critsuccess",
-        "priority": "17",
+        "priority": "18",
         "group": "",
         "name": "Critical success effect",
         "desc": "If you or the target must roll to decide the outcome of the item's activation, describe what happens at a critical success.",
@@ -360,7 +402,7 @@
     {
         "parent": "activities",
         "key": "success",
-        "priority": "18",
+        "priority": "19",
         "group": "",
         "name": "Success effect",
         "desc": "If you or the target must roll to decide the outcome of the item's activation, describe what happens at a success.",
@@ -369,7 +411,7 @@
     {
         "parent": "activities",
         "key": "failure",
-        "priority": "19",
+        "priority": "20",
         "group": "",
         "name": "Failure effect",
         "desc": "If you or the target must roll to decide the outcome of the item's activation, describe what happens at a failure.",
@@ -378,7 +420,7 @@
     {
         "parent": "activities",
         "key": "critfailure",
-        "priority": "20",
+        "priority": "21",
         "group": "",
         "name": "Critical failure effect",
         "desc": "If you or the target must roll to decide the outcome of the item's activation, describe what happens at a critical failure.",
@@ -444,7 +486,7 @@
         "priority": "01",
         "group": "4-Actions and Activities",
         "name": "Known actions or activities",
-        "desc": "Add a known action or activity that should be triggered when this item is activated. If an item has multiple activities, only one of them can be active at the same time."
+        "desc": "Add a known action or activity that should be triggered when this item is activated. These are actions and activities that are usually granted by a feat or a condition, for example."
     },
     {
         "parent": "gainActivities",
@@ -669,7 +711,7 @@
         "desc": "0 for Cantrips, or 1-10 for spell levels.",
         "type": "number",
         "locked": true,
-        "examples": "storedspelllevel"
+        "examples": "spelllevels"
     },
     {
         "parent": "storedSpells",
@@ -756,57 +798,132 @@
         "locked": true
     },
     {
-        "key": "isArmoredSkirt",
+        "key": "gainLanguages",
         "priority": "08",
+        "group": "5-Influence",
+        "name": "Gain Languages",
+        "desc": "Allow this item to grant you specific languages. They will be listed in the known language list, but not in the language selection in the character menu."
+    },
+    {
+        "parent": "gainLanguages",
+        "key": "locked",
+        "priority": "01",
+        "group": "",
+        "name": "Fixed language",
+        "desc": "Check this if the granted language should not be chosen or changed on the item in the inventory.",
+        "type": "checkbox"
+    },
+    {
+        "parent": "gainLanguages",
+        "key": "title",
+        "priority": "02",
+        "group": "",
+        "name": "Language title",
+        "desc": "The language will be listed on the item with this title, e.g. 'Granted language'."
+    },
+    {
+        "parent": "gainLanguages",
+        "key": "name",
+        "priority": "03",
+        "group": "",
+        "name": "Language name",
+        "desc": "If the language is fixed, name it here, e.g. 'Gnomish'. If it is not fixed, the name can be changed on the item later."
+    },
+    {
+        "key": "gainSenses",
+        "priority": "09",
+        "group": "5-Influence",
+        "name": "Gain Senses",
+        "desc": "Allow this item to grant you specific senses. They will be listed in the senses list, but not count toward prerequisites for feats.",
+        "examples": "senses"
+    },
+    {
+        "key": "isAeonStone",
+        "priority": "10",
+        "group": "5-Influence",
+        "name": "Act as Aeon Stone",
+        "desc": "Set if this item should be treated as an aeon stone and allowed to slot into a wayfinder. See unique activities, gained spells and hints can all set to activate only in a slotted aeon stone.",
+        "type": "checkbox"
+    },
+    {
+        "key": "isArmoredSkirt",
+        "priority": "11",
         "group": "5-Influence",
         "name": "Act as Armored Skirt",
         "desc": "Set if this item changes the effectiveness and weight of certain armors, like an armored skirt.",
         "type": "checkbox"
     },
     {
+        "key": "isBracersOfArmor",
+        "priority": "12",
+        "group": "5-Influence",
+        "name": "Act as Bracers of Armor",
+        "desc": "Set if this item can be used to attach talismans as if it were light armor, like bracers of armor.",
+        "type": "checkbox"
+    },
+    {
         "key": "isDoublingRings",
-        "priority": "09",
+        "priority": "13",
         "group": "5-Influence",
         "name": "Act as Doubling Rings",
         "desc": "Set if this item can be used to copy runes from one weapon to the other, like a doubling ring.",
         "locked": true,
-        "examples":"isdoublingrings"
+        "examples": "isdoublingrings"
     },
     {
         "key": "isHandwrapsOfMightyBlows",
-        "priority": "10",
+        "priority": "14",
         "group": "5-Influence",
         "name": "Act as Handwraps of Mighty Blows",
-        "desc": "Set if this item uses the 'Handwraps of Mighty Blows' functionality to enhance unarmed attacks with its own runes. The item's will be able to bear weapon runes if this is enabled.",
+        "desc": "Set if this item can bear weapon runes and apply their functionality to unarmed attacks, like handwraps of mighty blows. The item's will be able to bear weapon runes if this is enabled.",
         "type": "checkbox"
     },
     {
+        "key": "isRingOfWizardry",
+        "priority": "15",
+        "group": "5-Influence",
+        "name": "Act as Ring of Wizardry",
+        "desc": "If this function is used, the item can grant extra spell slots to the character's spellcasting like a ring of wizardry. Each added item grants a single spell slot to a prepared or spontaneous spellcasting that can be selected in the inventory."
+    },
+    {
+        "parent": "isRingOfWizardry",
+        "key": "tradition",
+        "priority": "01",
+        "group": "",
+        "name": "Required tradition",
+        "desc": "Set a tradition that the selected spellcasting must have, or leave this blank for no required tradition.",
+        "locked": true,
+        "examples": "spelltraditions"
+    },
+    {
+        "parent": "isRingOfWizardry",
+        "key": "level",
+        "priority": "02",
+        "group": "",
+        "name": "Spell level",
+        "desc": "This is the spell level that will gain an extra spell slot.",
+        "locked": true,
+        "examples": "spelllevels"
+    },
+    {
         "key": "isTalismanCord",
-        "priority": "11",
+        "priority": "16",
         "group": "5-Influence",
         "name": "Act as Talisman Cord",
         "desc": "Set if this item is attached to an item that can bear affixed talismans in order to preserve the talisman on use. Set to the number of schools to which it can be attuned.",
         "type": "number",
         "locked": true,
-        "examples":"istalismancord"
+        "examples": "istalismancord"
     },
     {
         "key": "isWayfinder",
-        "priority": "12",
+        "priority": "17",
         "group": "5-Influence",
         "name": "Act as Wayfinder",
         "desc": "Set if this item slots aeon stones to unlock their resonant abilities. Set to the number of aeon stones allowed in this wayfinder.",
         "type": "number",
         "locked": true,
-        "examples":"iswayfinder"
-    },
-    {
-        "key": "isAeonStone",
-        "priority": "13",
-        "group": "5-Influence",
-        "name": "Act as Aeon Stone",
-        "desc": "Set if this item should be treated as an aeon stone and allowed to slot into a wayfinder. See unique activities, gained spells and hints can all set to activate only in a slotted aeon stone.",
-        "type": "checkbox"
+        "examples": "iswayfinder"
     },
     {
         "key": "group",
@@ -821,7 +938,7 @@
         "priority": "00",
         "group": "7-Armor & Shields",
         "name": "Base armor type",
-        "desc": "If this armor is based on another armor, the base armor should be named here. This allows applying a specific armor proficiency and specialization effect to the item even if it is not named after the armor. Example: If you are creating a magical Leather Armor named Nightshroud, and you have master proficiency in leather armor, but trained in light armor, setting this to 'Leather Armor' will allow you to apply that master proficiency.",
+        "desc": "If this armor is based on another armor, the base armor should be named here. This allows applying a specific armor proficiency and specialization effect to the item even if it is not named after the armor. Example: If you are creating a magical Leather Armor named Nightshroud, and you have master proficiency in leather armor, but are only trained in light armor, setting this to 'Leather Armor' will allow you to apply that master proficiency.",
         "examples": "armorBase"
     },
     {
@@ -829,7 +946,7 @@
         "priority": "01",
         "group": "7-Armor & Shields",
         "name": "AC bonus",
-        "desc": "The armor's or shield's inherent bonus to armor class. A shield must be raised in order to apply its AC bonus.",
+        "desc": "The armor's or shield's item bonus to armor class. A shield must be raised in order to apply its AC bonus.",
         "type": "number",
         "validation": "0plus"
     },
@@ -860,7 +977,6 @@
         "type": "number",
         "validation": "0plus"
     },
-    
     {
         "key": "dexcap",
         "priority": "05",
@@ -901,10 +1017,9 @@
         "key": "coverbonus",
         "priority": "09",
         "group": "7-Armor & Shields",
-        "name": "Shield cover bonus",
-        "desc": "If this shield has a cover bonus value, you can take cover behind it while it is raised and gain this additional bonus to AC.",
-        "type": "number",
-        "validation": "0plus"
+        "name": "Allow shield cover",
+        "desc": "If this is set, you can take cover behind the shield while it is raised and gain a bonus to AC from cover.",
+        "type": "checkbox"
     },
     {
         "key": "weaponBase",
@@ -990,7 +1105,7 @@
         "priority": "10",
         "group": "8-Weapons",
         "name": "Dexterity-based",
-        "desc": "A dexterity-based weapon uses your dexterity modifier for its attack and damage bonus instead of your strength modifier, even if it doen't have the Finesse trait.",
+        "desc": "A dexterity-based weapon uses your dexterity modifier for its melee attack and damage bonus instead of your strength modifier, even if it doen't have the Finesse trait.",
         "type": "checkbox"
     },
     {
@@ -1133,8 +1248,17 @@
     },
     {
         "parent": "gainConditions",
-        "key": "source",
+        "key": "resonant",
         "priority": "07",
+        "group": "",
+        "name": "Resonant power",
+        "desc": "Check this box if the condition is only unlocked when the item is slotted into a Wayfinder. This applies only to aeon stones.",
+        "type": "checkbox"
+    },
+    {
+        "parent": "gainConditions",
+        "key": "source",
+        "priority": "08",
         "group": "",
         "name": "Condition source",
         "desc": "The condition will show this as its source. Should usually be the item name."

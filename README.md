@@ -10,7 +10,7 @@ PECS was gratefully created under the [Paizo Inc. Community Use Policy](https://
 
 # State of development
 
-I generally avoid content from the Advanced Character Guide for now, while there is still core content to do.
+I generally avoid content from the Advanced Character Guide and younger books for now, while there is still core content to do.
 
 You can build characters from level 1 through 20, with the following classes and ancestries fully implemented:
 
@@ -18,7 +18,7 @@ You can build characters from level 1 through 20, with the following classes and
 - [x] Barbarian
 - [x] Bard
 - [ ] Champion (feats missing)
-- [ ] Cleric (domain spells missing)
+- [x] Cleric
 - [x] Druid
 - [x] Fighter
 - [x] Monk
@@ -38,12 +38,12 @@ You can build characters from level 1 through 20, with the following classes and
 - [x] Lizardfolk
 - [ ] Shoony
 
-Basic equipment items are implemented, as well as weapon, shield and armor materials. Magic items and consumables are finished as follows:
+Non-magic equipment items are fully implemented, as well as weapon, shield and armor materials. Magic items and consumables are finished as follows:
 
 - [ ] Weapons
 - [ ] Armors
 - [ ] Shields
-- [ ] Worn Items
+- [x] Worn Items
 - [ ] Held Items
 - [x] Alchemical Bombs and Consumable Bombs
 - [x] Potions
@@ -57,4 +57,4 @@ Basic equipment items are implemented, as well as weapon, shield and armor mater
 - [x] Materials
 - [x] Runes
 
-Spells are implemented up to and including `5th level`.
+Spells are implemented up to and including `6th level`.
