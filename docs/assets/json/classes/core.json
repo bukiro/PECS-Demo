@@ -4,7 +4,7 @@
         "sourceBook": "Core Rulebook",
         "_extensionFileName": "core",
         "hitPoints": 8,
-        "problem": "Alchemist functionality and feats are not implemented yet.",
+        "disabled": "Alchemist functionality and feats are not implemented yet.",
         "customSkills": [
             {
                 "ability": "Intelligence",
@@ -3829,7 +3829,7 @@
         "_extensionFileName": "core",
         "deityFocused": true,
         "hitPoints": 10,
-        "problem": "Champion feats are not implemented yet.",
+        "warning": "Champion feats are not implemented yet.",
         "showDeityAnathema": true,
         "showDeityEdicts": true,
         "customSkills": [
@@ -8741,7 +8741,7 @@
         "desc": [
             {
                 "name": "Description",
-                "value": "The strength of your fist flows from your mind and spirit. You seek perfectionâ€\"honing your body into a flawless instrument and your mind into an orderly bastion of wisdom. Youâ€™re a fierce combatant renowned for martial arts skills and combat stances that grant you unique fighting moves. While the challenge of mastering many fighting styles drives you to great heights, you also enjoy meditating on philosophical questions and discovering new ways to obtain peace and enlightenment."
+                "value": "The strength of your fist flows from your mind and spirit. You seek perfection - honing your body into a flawless instrument and your mind into an orderly bastion of wisdom. You're a fierce combatant renowned for martial arts skills and combat stances that grant you unique fighting moves. While the challenge of mastering many fighting styles drives you to great heights, you also enjoy meditating on philosophical questions and discovering new ways to obtain peace and enlightenment."
             },
             {
                 "name": "Key Ability",
